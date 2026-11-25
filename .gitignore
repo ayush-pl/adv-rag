@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+
+# Generated pipeline artifacts. Manifests and datasets are committed.
+data/raw/
+data/processed/
+data/chunks/
+data/indexes/
+data/runs/
+
+# Local
+.env
+.vscode/
+
+# Working copy for spreadsheet review. Decisions are saved in review_decisions.jsonl.
+data/datasets/*/review_sheet*.xlsx

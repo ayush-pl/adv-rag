@@ -1,0 +1,20 @@
+{
+  "dataset_version": "v1",
+  "dataset_hash": "sha256-902f8ca4d216706e7cce02f28d8a0cbeb5753379d67d5b84925d890cd71797fd",
+  "corpus_hash": "sha256-9e14d8a33aa10018fddc0650c66ef0f7ac326c6d91c51b9394fd47c0f57ff080",
+  "questions": 199,
+  "splits": {
+    "calibration": 42,
+    "development": 40,
+    "test": 117
+  },
+  "types": {
+    "config_code": 27,
+    "multi_hop": 24,
+    "paraphrase_ambiguous": 10,
+    "single_hop": 78,
+    "table": 18,
+    "unanswerable": 25,
+    "version_specific": 17
+  }
+}

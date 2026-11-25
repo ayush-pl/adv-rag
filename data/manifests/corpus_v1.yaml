@@ -1,0 +1,63 @@
+# Pinned documentation snapshots. Raw documents are fetched by scripts/ingest.py, not committed.
+corpus_version: v1
+snapshot_date: "2026-11-01"
+
+sources:
+  - id: kubernetes
+    name: Kubernetes Documentation
+    version: v1.37
+    format: markdown
+    url_base: https://kubernetes.io/docs/
+    fetch: git
+    repo: https://github.com/kubernetes/website.git
+    commit: f4ec4968d939d533ecc82b7a352155caed3c932d
+    sparse_paths: [content/en/docs, content/en/examples]
+    content_dir: content/en/docs
+    examples_dir: content/en/examples
+    # Contributor guides and machine-generated API references are out of scope for v1.
+    exclude:
+      - contribute/*
+      - doc-contributor-tools/*
+      - home/*
+      - test.md
+      - reference/generated/*
+      - reference/kubernetes-api/*
+
+  - id: docker
+    name: Docker Documentation
+    version: snapshot-2026-11-01
+    format: markdown
+    url_base: https://docs.docker.com/
+    fetch: git
+    repo: https://github.com/docker/docs.git
+    commit: 53581df94e05ad4116a8d31e47ea098289fa5498
+    sparse_paths: [content/manuals]
+    content_dir: content/manuals
+    exclude:
+      - "*release-notes*"
+      - retired.md
+
+  - id: postgres-16
+    name: PostgreSQL Documentation
+    version: "16"
+    format: html
+    url_base: https://www.postgresql.org/docs/16/
+    fetch: tarball
+    url: https://ftp.postgresql.org/pub/source/v16.15/postgresql-16.15.tar.bz2
+    sha256: c1575341fa7bd40f5274ea465b34390f4dc64cdd0770af327005caaeb9f6b7ed
+    content_dir: doc/src/sgml/html
+    exclude:
+      - bookindex.html
+
+  # PostgreSQL 17 release tarballs no longer include built HTML, so v1 pins 15 and 16.
+  - id: postgres-15
+    name: PostgreSQL Documentation
+    version: "15"
+    format: html
+    url_base: https://www.postgresql.org/docs/15/
+    fetch: tarball
+    url: https://ftp.postgresql.org/pub/source/v15.19/postgresql-15.19.tar.bz2
+    sha256: e1a64a87a46b825b88c082e4518161a47aab53c45694964f8ba1df28f7859f89
+    content_dir: doc/src/sgml/html
+    exclude:
+      - bookindex.html

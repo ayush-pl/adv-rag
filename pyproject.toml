@@ -1,0 +1,80 @@
+[project]
+name = "advanced-rag-bench"
+version = "0.1.0"
+description = "Evaluation-first benchmarking framework for conventional and agentic RAG systems"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "faiss-cpu>=1.8",
+    "fastapi>=0.110",
+    "httpx>=0.27",
+    "lxml>=5.0",
+    "markdown-it-py>=3.0",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2",
+    "psutil>=5.9",
+    "pydantic>=2.6",
+    "pyyaml>=6.0",
+    "rank-bm25>=0.2.2",
+    "scipy>=1.12",
+    "tokenizers>=0.19",
+    "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+# Model inference. Kept optional so CI and unit tests run without torch or model downloads.
+ml = [
+    "nvidia-ml-py>=12.535",
+    "sentence-transformers>=3.0",
+    "torch>=2.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ranx>=0.3.21",
+    "ruff>=0.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ragbench"]
+
+# The RTX 5060 is a Blackwell GPU, which needs CUDA 12.8 or newer builds.
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130", marker = "sys_platform == 'win32'" },
+    { index = "pytorch-cpu", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not gpu and not ollama and not reference'"
+markers = [
+    "gpu: needs a CUDA GPU and the ml extra",
+    "ollama: needs a running Ollama server with the configured model",
+    "reference: cross-checks against ranx, slow because of its JIT compilation",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

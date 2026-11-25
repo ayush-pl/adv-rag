@@ -1,0 +1,10 @@
+# Chunking variants for the MVP retrieval sweep. Full size and overlap sensitivity is Phase 2.
+tokenizer:
+  tokenizer: BAAI/bge-small-en-v1.5
+  tokenizer_revision: 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+
+variants:
+  - {strategy: fixed, chunk_size: 256, overlap: 50}
+  - {strategy: recursive, chunk_size: 256, overlap: 50}
+  - {strategy: fixed, chunk_size: 512, overlap: 50}
+  - {strategy: recursive, chunk_size: 512, overlap: 50}
