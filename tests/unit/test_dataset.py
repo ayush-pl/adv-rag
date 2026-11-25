@@ -580,3 +580,32 @@ class TestReviewSession:
         assert "https://example.org/pods" in shown
         assert "95% of its key words" in shown
         assert "Check: Is one fact enough" in shown
+
+
+class TestStableSplits:
+    def many(self, count: int) -> list[Question]:
+        return [make_question(f"q-{i:03}", f"Question {i}?") for i in range(count)]
+
+    def test_existing_questions_keep_their_split(self):
+        questions = self.many(30)
+        first = assign_splits(questions)
+        previous = {q.question_id: name for name, values in first.items() for q in values}
+
+        # Removing a question would reshuffle a fresh split, but not a stable one.
+        remaining = [q for q in questions if q.question_id != first["development"][0].question_id]
+        second = assign_splits(remaining, previous=previous)
+        for name, values in second.items():
+            assert all(previous[q.question_id] == name for q in values)
+
+    def test_new_questions_are_assigned_and_followers_follow(self):
+        questions = self.many(12)
+        previous = {q.question_id: "development" for q in questions}
+        newcomers = [make_question(f"new-{i}", f"New {i}?") for i in range(24)]
+        follower = make_question(
+            "p-1", "Paraphrase?", provenance=Provenance(method="manual", source_question_id="q-000")
+        )
+        splits = assign_splits(questions + newcomers + [follower], previous=previous)
+        assert {q.question_id for q in splits["development"]} >= {q.question_id for q in questions}
+        assert "p-1" in {q.question_id for q in splits["development"]}
+        assert sum(len(v) for v in splits.values()) == 37
+        assert validate_splits(splits) == []

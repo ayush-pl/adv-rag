@@ -26,11 +26,27 @@ dependencies = [
 
 [project.optional-dependencies]
 # Model inference. Kept optional so CI and unit tests run without torch or model downloads.
+# Combine with exactly one PyTorch build: `--extra ml --extra cu130` for an NVIDIA GPU, or
+# `--extra ml --extra cpu` for CI and containers.
 ml = [
     "nvidia-ml-py>=12.535",
     "sentence-transformers>=3.0",
     "torch>=2.9",
 ]
+# The Linux CUDA wheel needs these CUDA libraries, but uv reads the Windows wheel's metadata,
+# which lists none, and applies it everywhere. So they are declared here, copied from the
+# Linux wheel's own metadata. Update them together with the torch pin.
+cu130 = [
+    "torch==2.14.1",
+    "cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; sys_platform == 'linux'",
+    "cuda-bindings>=13.0.3,<14; sys_platform == 'linux'",
+    "nvidia-cudnn-cu13==9.24.0.43; sys_platform == 'linux'",
+    "nvidia-cusparselt-cu13==0.8.1; sys_platform == 'linux'",
+    "nvidia-nccl-cu13==2.30.7; sys_platform == 'linux'",
+    "nvidia-nvshmem-cu13==3.4.5; sys_platform == 'linux'",
+    "triton~=3.8.0; sys_platform == 'linux'",
+]
+cpu = ["torch>=2.9"]
 
 [dependency-groups]
 dev = [
@@ -46,11 +62,14 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/ragbench"]
 
+[tool.uv]
+conflicts = [[{ extra = "cu130" }, { extra = "cpu" }]]
+
 # The RTX 5060 is a Blackwell GPU, which needs CUDA 12.8 or newer builds.
 [tool.uv.sources]
 torch = [
-    { index = "pytorch-cu130", marker = "sys_platform == 'win32'" },
-    { index = "pytorch-cpu", marker = "sys_platform == 'linux'" },
+    { index = "pytorch-cu130", extra = "cu130" },
+    { index = "pytorch-cpu", extra = "cpu" },
 ]
 
 [[tool.uv.index]]

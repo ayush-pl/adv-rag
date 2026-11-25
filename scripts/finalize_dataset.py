@@ -6,7 +6,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-from ragbench.dataset.models import TARGET_COUNTS, write_questions
+from ragbench.dataset.models import TARGET_COUNTS, read_questions, write_questions
 from ragbench.dataset.review import accepted_questions
 from ragbench.dataset.splits import assign_splits
 from ragbench.dataset.validation import validate_questions, validate_splits
@@ -22,7 +22,20 @@ def main() -> None:
         raise SystemExit("No accepted questions yet. Run scripts/review_questions.py first.")
 
     documents = {d.document_id: d for d in load_documents(DATA_DIR / "processed" / "v1")}
-    splits = assign_splits(questions)
+    previous = {
+        question.question_id: name
+        for name in ("development", "calibration", "test")
+        for question in read_questions(DATASET_DIR / f"{name}.jsonl")
+    }
+    splits = assign_splits(questions, previous=previous)
+    moved = [
+        q
+        for name, values in splits.items()
+        for q in values
+        if previous.get(q.question_id, name) != name
+    ]
+    if moved:
+        raise SystemExit(f"{len(moved)} questions would change split. This is a bug: stopping.")
     problems = validate_questions(questions, documents) + validate_splits(splits)
     if problems:
         print(f"{len(problems)} problems found, dataset not written:")

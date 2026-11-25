@@ -1,0 +1,289 @@
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/architecture/controller","char_start":4038,"char_end":5233,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/architecture/self-healing","char_start":1094,"char_end":1483,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/reference/glossary/controller","char_start":0,"char_end":631,"relevant":true,"quote":"For example: the deployment controller, the\ndaemonset controller, the namespace controller, and the persistent volume\ncontroller (and others) all run within the\nkube controller manager."}
+{"question_id":"q-04446582ac","document_id":"kubernetes/reference/networking/virtual-ips","char_start":0,"char_end":1083,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/tasks/debug/debug-cluster","char_start":8152,"char_end":9115,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/architecture/cloud-controller","char_start":1943,"char_end":2267,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/storage/projected-volumes","char_start":0,"char_end":118,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/reference/glossary/container-runtime","char_start":0,"char_end":359,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/architecture/nodes","char_start":6822,"char_end":8177,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/storage/volume-attributes-classes","char_start":1461,"char_end":2238,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/concepts/storage/volumes","char_start":3593,"char_end":3658,"relevant":false,"quote":""}
+{"question_id":"q-04446582ac","document_id":"kubernetes/reference/using-api/api-concepts","char_start":40990,"char_end":42116,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/catalog-pg-proc","char_start":2495,"char_end":3592,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/sql-syntax-calling-funcs","char_start":0,"char_end":1948,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/xfunc-sql","char_start":4980,"char_end":5145,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/xfunc-sql","char_start":19266,"char_end":20025,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-16/catalog-pg-proc","char_start":2495,"char_end":3592,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-16/sql-syntax-calling-funcs","char_start":0,"char_end":1948,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-16/xfunc-sql","char_start":4980,"char_end":5145,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-16/xfunc-sql","char_start":19266,"char_end":20025,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/protocol-message-formats","char_start":12993,"char_end":14131,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-15/sql-call","char_start":263,"char_end":890,"relevant":false,"quote":""}
+{"question_id":"q-0511969954","document_id":"postgres-16/pgbuffercache","char_start":0,"char_end":956,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/functions-admin","char_start":19644,"char_end":21473,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-16/functions-admin","char_start":23258,"char_end":24240,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/functions-admin","char_start":21293,"char_end":23164,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-16/functions-admin","char_start":20472,"char_end":21614,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/logicaldecoding-explanation","char_start":0,"char_end":1163,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/logicaldecoding-explanation","char_start":764,"char_end":1797,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/sql-createsubscription","char_start":971,"char_end":3004,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/view-pg-replication-slots","char_start":0,"char_end":2138,"relevant":false,"quote":""}
+{"question_id":"q-1457ff06ff","document_id":"postgres-15/warm-standby","char_start":16537,"char_end":17185,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-15/runtime-config-resource","char_start":11287,"char_end":12991,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-16/functions-admin","char_start":31505,"char_end":33245,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-15/config-setting","char_start":1899,"char_end":2774,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-15/functions-admin","char_start":30504,"char_end":32187,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-15/runtime-config-preset","char_start":0,"char_end":1067,"relevant":false,"quote":""}
+{"question_id":"q-2893610041","document_id":"postgres-15/storage-toast","char_start":5472,"char_end":6566,"relevant":false,"quote":""}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/concepts/extend-kubernetes","char_start":0,"char_end":897,"relevant":false,"quote":""}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/reference/scheduling/config","char_start":3489,"char_end":4507,"relevant":true,"quote":"`multiPoint`: This is a config-only field that allows plugins to be enabled\n   or disabled for all of their applicable extension points simultaneously."}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/reference/scheduling/config","char_start":12173,"char_end":13937,"relevant":true,"quote":"multiPoint:\n        enabled:\n        - name: 'MyPlugin'"}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/concepts/security/hardening-guide/scheduler","char_start":2709,"char_end":3870,"relevant":false,"quote":""}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/reference/scheduling/config","char_start":1267,"char_end":3484,"relevant":false,"quote":""}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/reference/scheduling/config","char_start":13853,"char_end":15433,"relevant":true,"quote":"multiPoint:\n        enabled:\n        - name: 'CustomQueueSort'\n        - name: 'CustomPlugin1'\n          weight: 3\n        - name: 'CustomPlugin2'"}
+{"question_id":"q-291ffa7aa9","document_id":"kubernetes/reference/scheduling/config","char_start":11203,"char_end":12171,"relevant":true,"quote":"One benefit of using `multiPoint` here is that if `MyPlugin` implements another\nextension point in the future, the `multiPoint` config will automatically enable it\nfor the new extension."}
+{"question_id":"q-34aacb1f67","document_id":"postgres-15/ddl-depend","char_start":1002,"char_end":2137,"relevant":true,"quote":"DROP TABLE products CASCADE;\n```\n\nand all the dependent objects will be removed, as will any objects that depend on them, recursively."}
+{"question_id":"q-34aacb1f67","document_id":"postgres-15/ddl-depend","char_start":1737,"char_end":2610,"relevant":false,"quote":""}
+{"question_id":"q-34aacb1f67","document_id":"postgres-16/ddl-depend","char_start":1002,"char_end":2137,"relevant":true,"quote":"DROP TABLE products CASCADE;\n```\n\nand all the dependent objects will be removed, as will any objects that depend on them, recursively."}
+{"question_id":"q-34aacb1f67","document_id":"postgres-16/ddl-depend","char_start":1737,"char_end":2610,"relevant":false,"quote":""}
+{"question_id":"q-34aacb1f67","document_id":"postgres-15/sql-droptable","char_start":127,"char_end":738,"relevant":true,"quote":"However, to drop a table that is referenced by a view or a foreign-key constraint of another table, `CASCADE` must be specified. (`CASCADE` will remove a dependent view entirely, but in the foreign-key case it will only remove the foreign-key constraint, not the other table entirely.)"}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/runtime-config-replication","char_start":11393,"char_end":12152,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/warm-standby","char_start":25526,"char_end":26360,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-16/runtime-config-replication","char_start":11535,"char_end":12254,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/different-replication-solutions","char_start":4400,"char_end":6042,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/runtime-config-replication","char_start":9539,"char_end":11391,"relevant":true,"quote":"The keyword `ANY`, coupled with `num_sync`, specifies a quorum-based synchronous replication and makes transaction commits wait until their WAL records are replicated to at least `num_sync` listed standbys. For example, a setting of `ANY 3 (s1, s2, s3, s4)` will cause each commit to proceed as soon as at least any three standbys of `s1`, `s2`, `s3` and `s4` reply."}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/warm-standby","char_start":29034,"char_end":29895,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-15/warm-standby","char_start":18965,"char_end":21395,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-16/different-replication-solutions","char_start":4400,"char_end":6042,"relevant":false,"quote":""}
+{"question_id":"q-363eeaeb68","document_id":"postgres-16/warm-standby","char_start":27981,"char_end":29023,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-15/app-pgrestore","char_start":16686,"char_end":17092,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-15/libpq-pgservice","char_start":1521,"char_end":2095,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-16/app-vacuumdb","char_start":7297,"char_end":8422,"relevant":true,"quote":"`PGDATABASE``PGHOST``PGPORT``PGUSER`\n\nDefault connection parameters"}
+{"question_id":"q-3991fd155c","document_id":"postgres-16/libpq-envars","char_start":0,"char_end":1987,"relevant":true,"quote":"The following environment variables can be used to select default connection parameter values, which will be used by `PQconnectdb`, `PQsetdbLogin` and `PQsetdb` if no value is directly specified by the calling code. These are useful to avoid hard-coding database connection information into simple client applications, for example.\n\n- `PGHOST` behaves the same as the host connection parameter.\n- `PGHOSTADDR` behaves the same as the hostaddr connection parameter. This can be set instead of or in addition to `PGHOST` to avoid DNS lookup overhead.\n- `PGPORT` behaves the same as the port connection parameter.\n- `PGDATABASE` behaves the same as the dbname connection parameter.\n- `PGUSER` behaves the same as the user connection parameter."}
+{"question_id":"q-3991fd155c","document_id":"postgres-15/libpq-envars","char_start":0,"char_end":1992,"relevant":true,"quote":"The following environment variables can be used to select default connection parameter values, which will be used by `PQconnectdb`, `PQsetdbLogin` and `PQsetdb` if no value is directly specified by the calling code. These are useful to avoid hard-coding database connection information into simple client applications, for example.\n\n- `PGHOST` behaves the same as the host connection parameter.\n- `PGHOSTADDR` behaves the same as the hostaddr connection parameter. This can be set instead of or in addition to `PGHOST` to avoid DNS lookup overhead.\n- `PGPORT` behaves the same as the port connection parameter.\n- `PGDATABASE` behaves the same as the dbname connection parameter.\n- `PGUSER` behaves the same as the user connection parameter."}
+{"question_id":"q-3991fd155c","document_id":"postgres-15/oid2name","char_start":2792,"char_end":3729,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-16/app-pgrestore","char_start":16686,"char_end":17092,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-16/libpq-pgservice","char_start":1521,"char_end":2095,"relevant":false,"quote":""}
+{"question_id":"q-3991fd155c","document_id":"postgres-16/oid2name","char_start":2792,"char_end":3729,"relevant":false,"quote":""}
+{"question_id":"q-3d677800c7","document_id":"postgres-15/postgres-fdw","char_start":23877,"char_end":24949,"relevant":false,"quote":""}
+{"question_id":"q-3d677800c7","document_id":"postgres-15/transaction-iso","char_start":0,"char_end":2450,"relevant":false,"quote":""}
+{"question_id":"q-3d677800c7","document_id":"postgres-15/transaction-iso","char_start":2452,"char_end":2898,"relevant":false,"quote":""}
+{"question_id":"q-3d677800c7","document_id":"postgres-15/transaction-iso","char_start":3275,"char_end":4472,"relevant":true,"quote":"Read Committed is the default isolation level in PostgreSQL."}
+{"question_id":"q-3d677800c7","document_id":"postgres-16/postgres-fdw","char_start":0,"char_end":1857,"relevant":false,"quote":""}
+{"question_id":"q-3d677800c7","document_id":"postgres-16/postgres-fdw","char_start":13784,"char_end":15709,"relevant":false,"quote":""}
+{"question_id":"q-408326431e","document_id":"docker/security/security-announcements","char_start":11632,"char_end":12698,"relevant":false,"quote":""}
+{"question_id":"q-408326431e","document_id":"docker/security/security-announcements","char_start":12483,"char_end":13203,"relevant":true,"quote":"| `Moby (Docker Engine)` | <= 25.0.1 and <= 24.0.8 |"}
+{"question_id":"q-408326431e","document_id":"docker/security/security-announcements","char_start":14248,"char_end":14691,"relevant":false,"quote":""}
+{"question_id":"q-408326431e","document_id":"docker/security/security-announcements","char_start":17795,"char_end":18738,"relevant":false,"quote":""}
+{"question_id":"q-408326431e","document_id":"docker/desktop/previous-versions/archive-windows","char_start":20321,"char_end":20627,"relevant":false,"quote":""}
+{"question_id":"q-4173f60e5d","document_id":"postgres-15/app-initdb","char_start":0,"char_end":1068,"relevant":false,"quote":""}
+{"question_id":"q-4173f60e5d","document_id":"postgres-16/app-initdb","char_start":0,"char_end":1064,"relevant":false,"quote":""}
+{"question_id":"q-4173f60e5d","document_id":"postgres-15/multibyte","char_start":5220,"char_end":6090,"relevant":false,"quote":""}
+{"question_id":"q-4505da5b36","document_id":"docker/scout/integrations/ci","char_start":0,"char_end":519,"relevant":false,"quote":""}
+{"question_id":"q-4505da5b36","document_id":"docker/scout/integrations/ci/gitlab","char_start":2220,"char_end":3221,"relevant":true,"quote":"If the commit was to the default\nbranch, Docker Scout generates a CVE report."}
+{"question_id":"q-4505da5b36","document_id":"docker/scout/integrations/ci/jenkins","char_start":0,"char_end":1572,"relevant":false,"quote":""}
+{"question_id":"q-4505da5b36","document_id":"docker/scout/integrations","char_start":911,"char_end":1345,"relevant":false,"quote":""}
+{"question_id":"q-4505da5b36","document_id":"docker/scout/integrations/ci/circle-ci","char_start":0,"char_end":682,"relevant":false,"quote":""}
+{"question_id":"q-4746827d8a","document_id":"kubernetes/setup/production-environment/container-runtimes","char_start":0,"char_end":1145,"relevant":false,"quote":""}
+{"question_id":"q-4746827d8a","document_id":"kubernetes/tasks/administer-cluster/migrating-from-dockershim/check-if-dockershim-removal-affects-you","char_start":2223,"char_end":3184,"relevant":false,"quote":""}
+{"question_id":"q-4746827d8a","document_id":"kubernetes/reference/node/topics-on-dockershim-and-cri-compatible-runtimes","char_start":0,"char_end":275,"relevant":false,"quote":""}
+{"question_id":"q-4746827d8a","document_id":"kubernetes/setup/production-environment/container-runtimes","char_start":10017,"char_end":10993,"relevant":false,"quote":""}
+{"question_id":"q-4746827d8a","document_id":"kubernetes/setup/production-environment/tools/kubeadm/install-kubeadm","char_start":4486,"char_end":5865,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/reference/kubectl/generated/kubectl_plugin","char_start":0,"char_end":499,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/concepts/extend-kubernetes/compute-storage-net/network-plugins","char_start":0,"char_end":688,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/concepts/overview/kubectl","char_start":3080,"char_end":3373,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/reference/glossary/flexvolume","char_start":0,"char_end":639,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/tasks/extend-kubectl/kubectl-plugins","char_start":1758,"char_end":1937,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"docker/engine/swarm/manage-nodes","char_start":6164,"char_end":6950,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/concepts/extend-kubernetes","char_start":0,"char_end":897,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/reference/kubectl/kuberc","char_start":11351,"char_end":12413,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/tasks/administer-cluster/cluster-upgrade","char_start":3402,"char_end":3831,"relevant":false,"quote":""}
+{"question_id":"q-5c1a70bdf1","document_id":"kubernetes/tasks/extend-kubectl/kubectl-plugins","char_start":554,"char_end":1116,"relevant":false,"quote":""}
+{"question_id":"q-6052481668","document_id":"docker/faqs/security","char_start":3538,"char_end":4549,"relevant":true,"quote":". Docker turns on Just-in-Time (JIT) provisioning when you configure an SSO\nconnection."}
+{"question_id":"q-6052481668","document_id":"docker/security/provisioning/domain-management","char_start":4359,"char_end":4697,"relevant":false,"quote":""}
+{"question_id":"q-6052481668","document_id":"docker/security/provisioning/scim","char_start":1447,"char_end":1826,"relevant":true,"quote":"Docker turns on Just-in-Time (JIT) provisioning when you configure an SSO\nconnection."}
+{"question_id":"q-6052481668","document_id":"docker/security/authentication/single-sign-on/manage","char_start":3224,"char_end":4413,"relevant":true,"quote":"- JIT provisioning (default): Users are automatically added to your organization\n  when they sign in via SSO"}
+{"question_id":"q-6052481668","document_id":"docker/security/provisioning/just-in-time","char_start":2151,"char_end":2753,"relevant":true,"quote":"When you create an SSO connection, Docker turns on JIT provisioning by\ndefault."}
+{"question_id":"q-6052481668","document_id":"docker/security/provisioning/scim/provision-scim","char_start":835,"char_end":1659,"relevant":true,"quote":"er turns on Just-in-Time (JIT) provisioning by default when you configure\n> SSO."}
+{"question_id":"q-6052481668","document_id":"docker/accounts/organization/manage/user-access","char_start":2598,"char_end":3202,"relevant":false,"quote":""}
+{"question_id":"q-6052481668","document_id":"docker/security/provisioning/just-in-time","char_start":3609,"char_end":3969,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/ddl-constraints","char_start":4546,"char_end":5638,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/ddl-partitioning","char_start":35669,"char_end":36927,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/sql-createtable","char_start":58315,"char_end":58397,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-16/ddl-constraints","char_start":4546,"char_end":5638,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-16/ddl-partitioning","char_start":35669,"char_end":36927,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-16/sql-createtable","char_start":59195,"char_end":59277,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/ddl-constraints","char_start":5640,"char_end":6582,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/ddl-constraints","char_start":21077,"char_end":21999,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/sql-createtable","char_start":59019,"char_end":59753,"relevant":false,"quote":""}
+{"question_id":"q-60a009433c","document_id":"postgres-15/sql-set-constraints","char_start":2882,"char_end":3202,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/ai/sandboxes/architecture","char_start":2693,"char_end":3785,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/settings-and-maintenance/settings","char_start":12239,"char_end":12699,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/features/networking","char_start":4767,"char_end":5765,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/features/networking/networking-how-tos","char_start":2303,"char_end":3392,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/settings-and-maintenance/settings","char_start":13462,"char_end":14410,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/setup/install/windows-permission-requirements","char_start":9250,"char_end":9455,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management/configure-json-file","char_start":11232,"char_end":12604,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/desktop/previous-versions/edge-releases-windows","char_start":80912,"char_end":81964,"relevant":false,"quote":""}
+{"question_id":"q-612833a11d","document_id":"docker/faqs/platform","char_start":5020,"char_end":5296,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/ai/sandboxes/usage","char_start":18655,"char_end":19677,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/build/building/base-images","char_start":2854,"char_end":3730,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/build/concepts/context","char_start":11235,"char_end":11985,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/scout/how-tos/artifact-types","char_start":814,"char_end":1487,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/build/exporters","char_start":4823,"char_end":5138,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/build/exporters","char_start":6306,"char_end":6875,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/desktop/settings-and-maintenance/backup-and-restore","char_start":1040,"char_end":2128,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/ai/sandboxes/usage","char_start":16737,"char_end":17068,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/build/exporters/local-tar","char_start":307,"char_end":798,"relevant":false,"quote":""}
+{"question_id":"q-62f4deed20","document_id":"docker/engine/install/binaries","char_start":3250,"char_end":4028,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-15/hash-intro","char_start":0,"char_end":1142,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-15/indexes-types","char_start":0,"char_end":525,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-16/hash-intro","char_start":0,"char_end":1142,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-16/indexes-types","char_start":0,"char_end":525,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-15/indexam","char_start":0,"char_end":1914,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-15/indexes-types","char_start":1606,"char_end":2718,"relevant":false,"quote":""}
+{"question_id":"q-6d819058d6","document_id":"postgres-15/plpgsql-implementation","char_start":8586,"char_end":10770,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-features","char_start":15782,"char_end":16460,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/tutorials/stateful-application/zookeeper","char_start":40168,"char_end":41088,"relevant":true,"quote":"The `zk-1` Pod cannot be scheduled because the `zk` `StatefulSet` contains a `PodAntiAffinity` rule preventing\nco-location of the Pods, and as only two nodes are schedulable, the Pod will remain in a Pending state."}
+{"question_id":"q-80491eba78","document_id":"kubernetes/reference/labels-annotations-taints","char_start":24301,"char_end":25244,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/tutorials/stateful-application/zookeeper","char_start":37514,"char_end":38330,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":0,"char_end":1001,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":1432,"char_end":2488,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":10343,"char_end":10572,"relevant":false,"quote":""}
+{"question_id":"q-80491eba78","document_id":"kubernetes/tutorials/stateful-application/zookeeper","char_start":34503,"char_end":36303,"relevant":true,"quote":"requiredDuringSchedulingIgnoredDuringExecution:\n      - labelSelector:\n          matchExpressions:\n            - key: \"app\"\n              operator: In\n              values:\n                - zk\n        topologyKey: \"kubernetes.io/hostname\""}
+{"question_id":"q-85f7798850","document_id":"docker/desktop/previous-versions/edge-releases-mac","char_start":25656,"char_end":25755,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":7774,"char_end":8271,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":8273,"char_end":8596,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":11693,"char_end":12673,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":12483,"char_end":13203,"relevant":true,"quote":"| `Moby (Docker Engine)` | <= 25.0.1 and <= 24.0.8 |"}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":13492,"char_end":14353,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/desktop/previous-versions/2.x-mac","char_start":18552,"char_end":18651,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":1055,"char_end":1366,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":9393,"char_end":10404,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":18626,"char_end":19680,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/desktop/previous-versions/edge-releases-windows","char_start":37445,"char_end":37543,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":3521,"char_end":4750,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":8598,"char_end":9391,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":14248,"char_end":14691,"relevant":false,"quote":""}
+{"question_id":"q-85f7798850","document_id":"docker/security/security-announcements","char_start":17795,"char_end":18738,"relevant":false,"quote":""}
+{"question_id":"q-9307b890fb","document_id":"postgres-15/logicaldecoding-output-plugin","char_start":2350,"char_end":2657,"relevant":true,"quote":"An output plugin may also define functions to support two-phase commits, which allows actions to be decoded on the `PREPARE TRANSACTION`. The `begin_prepare_cb`, `prepare_cb`, `stream_prepare_cb`, `commit_prepared_cb` and `rollback_prepared_cb` callbacks are required, while `filter_prepare_cb` is optional."}
+{"question_id":"q-9307b890fb","document_id":"postgres-15/logicaldecoding-two-phase-commits","char_start":0,"char_end":962,"relevant":true,"quote":"To support the streaming of two-phase commands, an output plugin needs to provide additional callbacks. There are multiple two-phase commit callbacks that are required, (`begin_prepare_cb`, `prepare_cb`, `commit_prepared_cb`, `rollback_prepared_cb` and `stream_prepare_cb`) and an optional callback (`filter_prepare_cb`)."}
+{"question_id":"q-9307b890fb","document_id":"postgres-16/logicaldecoding-output-plugin","char_start":17631,"char_end":18641,"relevant":false,"quote":""}
+{"question_id":"q-9307b890fb","document_id":"postgres-16/logicaldecoding-two-phase-commits","char_start":0,"char_end":1745,"relevant":true,"quote":"To support the streaming of two-phase commands, an output plugin needs to provide additional callbacks. There are multiple two-phase commit callbacks that are required, (`begin_prepare_cb`, `prepare_cb`, `commit_prepared_cb`, `rollback_prepared_cb` and `stream_prepare_cb`) and an optional callback (`filter_prepare_cb`)."}
+{"question_id":"q-9307b890fb","document_id":"postgres-15/logicaldecoding-streaming","char_start":0,"char_end":1926,"relevant":false,"quote":""}
+{"question_id":"q-9307b890fb","document_id":"postgres-16/logicaldecoding-output-plugin","char_start":1689,"char_end":2435,"relevant":false,"quote":""}
+{"question_id":"q-9307b890fb","document_id":"postgres-16/two-phase","char_start":0,"char_end":1015,"relevant":false,"quote":""}
+{"question_id":"q-9a5bd709f3","document_id":"kubernetes/reference/config-api/kubelet-config.v1beta1","char_start":37173,"char_end":39275,"relevant":false,"quote":""}
+{"question_id":"q-9a5bd709f3","document_id":"kubernetes/concepts/cluster-administration/node-shutdown","char_start":4753,"char_end":5444,"relevant":false,"quote":""}
+{"question_id":"q-9a5bd709f3","document_id":"kubernetes/concepts/cluster-administration/node-shutdown","char_start":5309,"char_end":6597,"relevant":false,"quote":""}
+{"question_id":"q-9a5bd709f3","document_id":"kubernetes/reference/config-api/kubelet-config.v1beta1","char_start":36435,"char_end":37432,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/applevel-consistency","char_start":1677,"char_end":2673,"relevant":true,"quote":"It may be a good idea to set `default_transaction_isolation` to `serializable`."}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/transaction-iso","char_start":14068,"char_end":15364,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-16/applevel-consistency","char_start":1677,"char_end":2673,"relevant":true,"quote":"It may be a good idea to set `default_transaction_isolation` to `serializable`."}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-16/transaction-iso","char_start":14062,"char_end":15371,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/sql-set-transaction","char_start":3387,"char_end":4579,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/sql-set-transaction","char_start":6392,"char_end":7137,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/transaction-iso","char_start":0,"char_end":2450,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/transaction-iso","char_start":2082,"char_end":2898,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-15/transaction-iso","char_start":20371,"char_end":21619,"relevant":false,"quote":""}
+{"question_id":"q-a2f7cf35ab","document_id":"postgres-16/postgres-fdw","char_start":24560,"char_end":25862,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/concepts/workloads/controllers/statefulset","char_start":14455,"char_end":15091,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/reference/labels-annotations-taints","char_start":13258,"char_end":14413,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/tasks/run-application/update-deployment-rolling","char_start":4469,"char_end":5404,"relevant":true,"quote":"Deployments support two\nupdate strategy types:\n\n- **RollingUpdate** (default): gradually replaces old Pods with new ones.\n- **Recreate**: terminates all existing Pods before creating new ones. This\n  causes downtime.\n\nFor the RollingUpdate strategy, these parameters control how Kubernetes performs the update:\n\n| Parameter | Controls | Default | Example |\n|---|---|---|---|\n| `maxUnavailable` | Maximum number of Pods that can be unavailable during the update | 25% | `1` or `25%` |\n| `maxSurge` | Maximum number of extra Pods that can be created during the update | 25% | `1` or `25%` |"}
+{"question_id":"q-be08068049","document_id":"kubernetes/concepts/workloads/autoscaling/horizontal-pod-autoscale","char_start":12676,"char_end":13412,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/concepts/workloads/controllers/deployment","char_start":13778,"char_end":14900,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/concepts/workloads/controllers/deployment","char_start":49917,"char_end":50988,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/tutorials/kubernetes-basics/update/update-intro","char_start":537,"char_end":1675,"relevant":false,"quote":""}
+{"question_id":"q-be08068049","document_id":"kubernetes/tasks/run-application/update-deployment-rolling","char_start":5291,"char_end":5682,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-15/fdw-callbacks","char_start":7530,"char_end":8716,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-15/fdw-planning","char_start":5121,"char_end":6741,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-15/fdw-row-locking","char_start":1461,"char_end":3110,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-16/fdw-callbacks","char_start":7530,"char_end":8716,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-16/fdw-planning","char_start":5121,"char_end":6741,"relevant":false,"quote":""}
+{"question_id":"q-bf7045af66","document_id":"postgres-16/fdw-row-locking","char_start":1461,"char_end":3110,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/cluster-administration/swap-memory-management","char_start":18362,"char_end":19119,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":26980,"char_end":28112,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/scheduling-eviction/node-pressure-eviction","char_start":3561,"char_end":4227,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/tasks/administer-cluster/memory-manager","char_start":5577,"char_end":7280,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/tasks/debug/debug-cluster/resource-metrics-pipeline","char_start":5963,"char_end":6697,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/cluster-administration/swap-memory-management","char_start":17427,"char_end":18580,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/resource-management/resource-managers","char_start":13633,"char_end":13931,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/cluster-administration/swap-memory-management","char_start":12197,"char_end":13079,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":7433,"char_end":8335,"relevant":false,"quote":""}
+{"question_id":"q-c3e3e93bf0","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":10897,"char_end":13127,"relevant":false,"quote":""}
+{"question_id":"q-cf415c1677","document_id":"postgres-15/pgbuffercache","char_start":0,"char_end":920,"relevant":false,"quote":""}
+{"question_id":"q-cf415c1677","document_id":"postgres-15/release-15-2","char_start":12550,"char_end":14474,"relevant":false,"quote":""}
+{"question_id":"q-cf415c1677","document_id":"postgres-15/xml2","char_start":0,"char_end":1027,"relevant":false,"quote":""}
+{"question_id":"q-cf415c1677","document_id":"postgres-16/pgbuffercache","char_start":2680,"char_end":3610,"relevant":false,"quote":""}
+{"question_id":"q-cf415c1677","document_id":"postgres-16/release-16","char_start":46,"char_end":734,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/hash-intro","char_start":0,"char_end":1142,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/indexes-index-only-scans","char_start":0,"char_end":2177,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/indexes-types","char_start":0,"char_end":525,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/infoschema-columns","char_start":7322,"char_end":8828,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-16/hash-intro","char_start":0,"char_end":1142,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-16/indexes-index-only-scans","char_start":0,"char_end":2177,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-16/indexes-types","char_start":0,"char_end":525,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-16/infoschema-columns","char_start":7322,"char_end":8828,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/datatype","char_start":0,"char_end":1782,"relevant":false,"quote":""}
+{"question_id":"q-e31d8f1019","document_id":"postgres-15/indexam","char_start":0,"char_end":1235,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/policy/resource-quotas","char_start":21022,"char_end":22072,"relevant":true,"quote":"### PriorityClass scope\nFEATURE STATE: Kubernetes v1.17 [stable]\n\nA ResourceQuota with a PriorityClass scope only matches Pods that have a particular\npriority class, and only\nif any `scopeSelector` in the quota spec selects a particular Pod."}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/reference/glossary/priority-class","char_start":0,"char_end":420,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/workloads/pods/advanced-pod-config","char_start":0,"char_end":1124,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/workloads/pods/advanced-pod-config","char_start":1242,"char_end":1611,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/policy/resource-quotas","char_start":18282,"char_end":18485,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/policy/resource-quotas","char_start":25275,"char_end":27171,"relevant":true,"quote":"- scopeName: PriorityClass\n        operator: In\n        values: [\"cluster-services\"]"}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/scheduling-eviction/pod-priority-preemption","char_start":1058,"char_end":2764,"relevant":false,"quote":""}
+{"question_id":"q-e54c1586b9","document_id":"kubernetes/concepts/workloads/workload-api/disruption-and-priority","char_start":4153,"char_end":4573,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":26868,"char_end":28279,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/overview/working-with-objects/namespaces","char_start":397,"char_end":1363,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/policy/limit-range","char_start":838,"char_end":1478,"relevant":true,"quote":"A _LimitRange_ provides constraints that can:\n\n- Enforce minimum and maximum compute resources usage per Pod or Container in a namespace."}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/tasks/administer-cluster/manage-resources/cpu-default-namespace","char_start":0,"char_end":519,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/tasks/administer-cluster/manage-resources/memory-default-namespace","char_start":4556,"char_end":5773,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/overview/working-with-objects/names","char_start":441,"char_end":1939,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/overview/working-with-objects/namespaces","char_start":0,"char_end":395,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/policy/limit-range","char_start":0,"char_end":883,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/security/multi-tenancy","char_start":6467,"char_end":7675,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/reference/glossary/limitrange","char_start":0,"char_end":344,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":4835,"char_end":5867,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/concepts/security/multi-tenancy","char_start":9198,"char_end":11161,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/reference/glossary/namespace","char_start":0,"char_end":511,"relevant":false,"quote":""}
+{"question_id":"q-ea73f8c136","document_id":"kubernetes/reference/labels-annotations-taints","char_start":102149,"char_end":102736,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/sql-copy","char_start":19640,"char_end":20285,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-16/sql-copy","char_start":19911,"char_end":20556,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/datatype-binary","char_start":1043,"char_end":1613,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/ecpg-variables","char_start":12259,"char_end":12745,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/libpq-example","char_start":9937,"char_end":11554,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/libpq-exec","char_start":39125,"char_end":40055,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-15/storage-toast","char_start":0,"char_end":1647,"relevant":false,"quote":""}
+{"question_id":"q-ea77351ed3","document_id":"postgres-16/functions-binarystring","char_start":0,"char_end":1472,"relevant":false,"quote":""}
+{"question_id":"q-f7d98fd658","document_id":"kubernetes/concepts/architecture/garbage-collection","char_start":1072,"char_end":2168,"relevant":false,"quote":""}
+{"question_id":"q-f7d98fd658","document_id":"kubernetes/concepts/architecture/garbage-collection","char_start":1968,"char_end":2986,"relevant":true,"quote":"In v1.20+, if the garbage collector detects an invalid cross-namespace `ownerReference`,\nor a cluster-scoped dependent with an `ownerReference` referencing a namespaced kind, a warning Event\nwith a reason of `OwnerRefInvalidNamespace` and an `involvedObject` of the invalid dependent is reported.\nYou can check for that kind of Event by running\n`kubectl get events -A --field-selector=reason=OwnerRefInvalidNamespace`."}
+{"question_id":"q-f7d98fd658","document_id":"kubernetes/concepts/overview/working-with-objects/owners-dependents","char_start":694,"char_end":2645,"relevant":false,"quote":""}
+{"question_id":"q-f7d98fd658","document_id":"postgres-15/functions-event-triggers","char_start":1587,"char_end":3343,"relevant":false,"quote":""}
+{"question_id":"q-f9444e20f2","document_id":"postgres-15/typeconv-overview","char_start":2714,"char_end":3974,"relevant":true,"quote":"An additional heuristic provided by the parser allows improved determination of the proper casting behavior among groups of types that have implicit casts. Data types are divided into several basic type categories, including `boolean`, `numeric`, `string`, `bitstring`, `datetime`, `timespan`, `geometric`, `network`, and user-defined. (For a list see Table 53.65; but note it is also possible to create custom type categories.) Within each category there can be one or more preferred types, which are preferred when there is a choice of possible types. With careful selection of preferred types and available implicit casts, it is possible to ensure that ambiguous expressions (those with multiple candidate parsing solutions) can be resolved in a useful way."}
+{"question_id":"q-f9444e20f2","document_id":"postgres-16/typeconv-overview","char_start":2714,"char_end":3974,"relevant":true,"quote":"An additional heuristic provided by the parser allows improved determination of the proper casting behavior among groups of types that have implicit casts. Data types are divided into several basic type categories, including `boolean`, `numeric`, `string`, `bitstring`, `datetime`, `timespan`, `geometric`, `network`, and user-defined. (For a list see Table 53.65; but note it is also possible to create custom type categories.) Within each category there can be one or more preferred types, which are preferred when there is a choice of possible types. With careful selection of preferred types and available implicit casts, it is possible to ensure that ambiguous expressions (those with multiple candidate parsing solutions) can be resolved in a useful way."}
+{"question_id":"q-f9444e20f2","document_id":"postgres-15/typeconv-overview","char_start":0,"char_end":2151,"relevant":false,"quote":""}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-15/storage-file-layout","char_start":0,"char_end":991,"relevant":false,"quote":""}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-15/storage-file-layout","char_start":1763,"char_end":3392,"relevant":false,"quote":""}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-16/storage-file-layout","char_start":0,"char_end":1907,"relevant":true,"quote":"| pg_multixact | Subdirectory containing multitransaction status data (used for shared row locks) |"}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-16/storage-file-layout","char_start":1763,"char_end":3392,"relevant":false,"quote":""}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-15/extend-type-system","char_start":0,"char_end":134,"relevant":false,"quote":""}
+{"question_id":"q-fe95cba2e1","document_id":"postgres-15/storage-file-layout","char_start":810,"char_end":1762,"relevant":true,"quote":"| pg_multixact | Subdirectory containing multitransaction status data (used for shared row locks) |"}
+{"question_id":"q-4e765530b3","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_preflight","char_start":147,"char_end":1043,"relevant":false,"quote":""}
+{"question_id":"q-4e765530b3","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply","char_start":845,"char_end":1671,"relevant":false,"quote":""}
+{"question_id":"q-4e765530b3","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_plan","char_start":364,"char_end":1195,"relevant":false,"quote":""}
+{"question_id":"q-4e97ddc7bc","document_id":"docker/docker-hub/repos/manage/access","char_start":4375,"char_end":5043,"relevant":false,"quote":""}
+{"question_id":"q-4e97ddc7bc","document_id":"kubernetes/tasks/access-application-cluster/web-ui-dashboard","char_start":5846,"char_end":6703,"relevant":false,"quote":""}
+{"question_id":"q-4e97ddc7bc","document_id":"kubernetes/tasks/access-application-cluster/web-ui-dashboard","char_start":6578,"char_end":7593,"relevant":false,"quote":""}
+{"question_id":"q-8a8c9dbb8f","document_id":"postgres-15/datatype-numeric","char_start":4011,"char_end":4938,"relevant":false,"quote":""}
+{"question_id":"q-8a8c9dbb8f","document_id":"postgres-16/datatype-numeric","char_start":4011,"char_end":4938,"relevant":false,"quote":""}
+{"question_id":"q-8a8c9dbb8f","document_id":"postgres-15/datatype-numeric","char_start":5465,"char_end":6232,"relevant":false,"quote":""}
+{"question_id":"q-9492ed8e22","document_id":"docker/scout/explore/analysis","char_start":8692,"char_end":9294,"relevant":false,"quote":""}
+{"question_id":"q-9492ed8e22","document_id":"docker/scout/explore/analysis","char_start":3253,"char_end":3757,"relevant":false,"quote":""}
+{"question_id":"q-9492ed8e22","document_id":"docker/desktop/troubleshoot-and-support/faqs/macfaqs","char_start":634,"char_end":928,"relevant":true,"quote":""}
+{"question_id":"q-d8195c9e00","document_id":"docker/ai/sandboxes/configuration/credentials","char_start":22223,"char_end":22617,"relevant":false,"quote":""}
+{"question_id":"q-d8195c9e00","document_id":"docker/ai/sandboxes/configuration/credentials","char_start":24771,"char_end":25300,"relevant":false,"quote":""}
+{"question_id":"q-d8195c9e00","document_id":"docker/ai/sandboxes/customize/kits-v2","char_start":30632,"char_end":31441,"relevant":false,"quote":""}
+{"question_id":"q-f7d98fd658","document_id":"postgres-15/ddl-depend","char_start":0,"char_end":1735,"relevant":true,"quote":"and all the dependent objects will be removed, as will any objects that depend on them, recursively."}
+{"question_id":"q-f7d98fd658","document_id":"postgres-16/ddl-depend","char_start":0,"char_end":1735,"relevant":true,"quote":"and all the dependent objects will be removed, as will any objects that depend on them, recursively."}

@@ -1,0 +1,5 @@
+# Keep LF everywhere, so dataset and lock files hash identically on every OS.
+* text=auto eol=lf
+*.pdf binary
+*.docx binary
+*.xlsx binary

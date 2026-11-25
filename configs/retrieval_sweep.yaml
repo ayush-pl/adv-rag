@@ -1,0 +1,48 @@
+# Retrieval experiments R1-R7 from the spec (section 3.18). Runs on the development split.
+chunking:
+  f256: {strategy: fixed, chunk_size: 256, overlap: 50}
+  r256: {strategy: recursive, chunk_size: 256, overlap: 50}
+  f512: {strategy: fixed, chunk_size: 512, overlap: 50}
+  r512: {strategy: recursive, chunk_size: 512, overlap: 50}
+
+embedders:
+  minilm: sentence-transformers/all-MiniLM-L6-v2
+  bge: BAAI/bge-small-en-v1.5
+
+runs:
+  - {chunking: [f256, r256, f512, r512], method: dense, embedder: minilm}
+  - {chunking: [f256, r256, f512, r512], method: dense, embedder: bge}
+  - {chunking: [f256, r256, f512, r512], method: bm25}
+  - {chunking: [f256, r256, f512, r512], method: hybrid, embedder: bge, rrf_k: [60]}
+  - {chunking: [r512], method: hybrid, embedder: bge, rrf_k: [10, 30, 100]}
+  - {chunking: [f256, r256, f512, r512], method: hybrid, embedder: bge, rerank: true}
+
+comparisons:
+  # R1: embedding models. MiniLM reads at most 256 tokens, so it truncates 512-token chunks.
+  - {experiment: R1, baseline: r256-dense-minilm, treatment: r256-dense-bge}
+  - {experiment: R1, baseline: r512-dense-minilm, treatment: r512-dense-bge}
+  # R2: dense against keyword retrieval.
+  - {experiment: R2, baseline: r256-dense-bge, treatment: r256-bm25}
+  - {experiment: R2, baseline: r512-dense-bge, treatment: r512-bm25}
+  # R3: dense against hybrid.
+  - {experiment: R3, baseline: r256-dense-bge, treatment: r256-hybrid-bge-k60}
+  - {experiment: R3, baseline: r512-dense-bge, treatment: r512-hybrid-bge-k60}
+  # R4: RRF fusion constant.
+  - {experiment: R4, baseline: r512-hybrid-bge-k60, treatment: r512-hybrid-bge-k10}
+  - {experiment: R4, baseline: r512-hybrid-bge-k60, treatment: r512-hybrid-bge-k30}
+  - {experiment: R4, baseline: r512-hybrid-bge-k60, treatment: r512-hybrid-bge-k100}
+  # R5: reranking.
+  - {experiment: R5, baseline: r256-hybrid-bge-k60, treatment: r256-hybrid-bge-k60-rerank}
+  - {experiment: R5, baseline: r512-hybrid-bge-k60, treatment: r512-hybrid-bge-k60-rerank}
+  # R6: fixed against recursive chunking.
+  - {experiment: R6, baseline: f256-dense-bge, treatment: r256-dense-bge}
+  - {experiment: R6, baseline: f512-dense-bge, treatment: r512-dense-bge}
+  - {experiment: R6, baseline: f256-hybrid-bge-k60, treatment: r256-hybrid-bge-k60}
+  - {experiment: R6, baseline: f512-hybrid-bge-k60, treatment: r512-hybrid-bge-k60}
+
+# R7: top-K is read from the cutoffs of these runs rather than run separately.
+top_k_configs:
+  - r512-dense-bge
+  - r512-bm25
+  - r512-hybrid-bge-k60
+  - r512-hybrid-bge-k60-rerank

@@ -20,3 +20,5 @@ data/runs/
 
 # Working copy for spreadsheet review. Decisions are saved in review_decisions.jsonl.
 data/datasets/*/review_sheet*.xlsx
+# Excel lock files, present while a sheet is open.
+~$*
