@@ -1,0 +1,25 @@
+{"sample_id":"v-001","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Fully correct; all three functions identified."}
+{"sample_id":"v-002","scores":{"correctness":2,"faithfulness":5,"relevance":2},"note":"Addresses general PostgreSQL CASCADE behavior but does not specifically address event triggers or Kubernetes invalid owner references."}
+{"sample_id":"v-003","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correct command and configuration."}
+{"sample_id":"v-004","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correct: 100 arguments."}
+{"sample_id":"v-005","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly explains that configuring an SSO connection enables JIT provisioning."}
+{"sample_id":"v-006","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies kube-controller-manager."}
+{"sample_id":"v-007","scores":{"correctness":2,"faithfulness":5,"relevance":2},"note":"Discusses index-only scans rather than which index types support different storage data types."}
+{"sample_id":"v-008","scores":{"correctness":4,"faithfulness":5,"relevance":5},"note":"Correct explanation, but omits the examples distinguishing same-category implicit casts from cross-category explicit casts."}
+{"sample_id":"v-009","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Fully correct: four bytes."}
+{"sample_id":"v-010","scores":{"correctness":2,"faithfulness":3,"relevance":3},"note":"Does not identify the affected Moby versions (v25.0.1 and v24.0.8 or earlier). Confuses a mitigation condition with the affected-version specification."}
+{"sample_id":"v-011","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly lists all four index methods."}
+{"sample_id":"v-012","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies both plugin limitations."}
+{"sample_id":"v-013","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly lists all four environment variables."}
+{"sample_id":"v-014","scores":{"correctness":1,"faithfulness":5,"relevance":1},"note":"Explains image creation and export, not loading an existing tar archive."}
+{"sample_id":"v-015","scores":{"correctness":4,"faithfulness":5,"relevance":5},"note":"Correctly explains preferred-type selection within the same category but omits the implicit-versus-explicit casting examples."}
+{"sample_id":"v-016","scores":{"correctness":5,"faithfulness":2,"relevance":5},"note":"The 300-second value appears in the passage's example configuration, but the answer presents it as an unconditional rule. The passage also describes a different default threshold behavior."}
+{"sample_id":"v-017","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Reference wrong. The answer accurately reflects the OS-dependent definitions in the passages, whereas the reference describes a different memory calculation."}
+{"sample_id":"v-018","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies multitransaction status data used for shared row locks."}
+{"sample_id":"v-019","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies the additional 1-or-4-byte overhead."}
+{"sample_id":"v-020","scores":{"correctness":2,"faithfulness":5,"relevance":3},"note":"Describes candidate standby behavior but fails to provide the required ANY 2 configuration or explain the minimum of two acknowledgments."}
+{"sample_id":"v-021","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies RollingUpdate and the maximum of one unavailable replica."}
+{"sample_id":"v-022","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Exact correct configuration."}
+{"sample_id":"v-023","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Fully correct storage overhead."}
+{"sample_id":"v-024","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies all three functions."}
+{"sample_id":"v-025","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":"Correctly identifies all four index methods and explains the STORAGE clause."}

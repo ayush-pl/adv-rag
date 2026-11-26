@@ -1,0 +1,26 @@
+# Generation experiments. Retrieval configurations come from configs/retrieval_sweep.yaml.
+retrieval_configs:
+  # Simple baseline: dense retrieval only.
+  - r512-dense-bge
+  # Best Recall@5 on development after the pooled label review, at 130 ms per query.
+  - r512-hybrid-bge-k60
+  # Best nDCG@10 on development, adding a cross-encoder at about 320 ms per query.
+  - r256-hybrid-bge-k60-rerank
+
+# Generators come from different model families than the judge, so it has no own-family
+# answers to favour.
+models:
+  - llama3.1:8b
+  - gemma3:4b
+
+judge: qwen2.5:7b
+
+top_n: 5
+
+settings:
+  temperature: 0.0
+  seed: 0
+  max_tokens: 512
+  # Five 512-token passages plus instructions need about 3,000 tokens. The window is set
+  # explicitly, because Ollama silently truncates prompts that exceed it.
+  context_tokens: 8192

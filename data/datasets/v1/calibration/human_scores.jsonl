@@ -1,0 +1,50 @@
+{"sample_id":"s-001","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-002","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-003","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-004","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-005","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-006","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-007","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-008","scores":{"correctness":3,"faithfulness":3,"relevance":4},"note":"Adds a misleading array-size claim: the passage presents arrays as an alternative to cursor-based retrieval."}
+{"sample_id":"s-009","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-010","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-011","scores":{"correctness":4,"faithfulness":4,"relevance":4},"note":"reference wrong — the passages say Team/Business upgrades use Manage plans; the Buy now path is for Docker Pro. Business is an organizational option, but not the only one."}
+{"sample_id":"s-012","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-013","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-014","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-015","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-016","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-017","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-018","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-019","scores":{"correctness":3,"faithfulness":3,"relevance":4},"note":"Identifies json_object, a text-array constructor, as the hstore conversion method; the passage instead describes an hstore-to-JSON cast."}
+{"sample_id":"s-020","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-021","scores":{"correctness":3,"faithfulness":5,"relevance":4},"note":"Describes MAC-address routing and network visibility, but omits the 802.1Q sub-interface central to the reference."}
+{"sample_id":"s-022","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-023","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-024","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-025","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-026","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-027","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-028","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-029","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-030","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-031","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-032","scores":{"correctness":3,"faithfulness":3,"relevance":5},"note":"Misapplies statements about whole-cluster restoration and archival storage to pg_dump; those statements describe the physical-backup method."}
+{"sample_id":"s-033","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-034","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-035","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-036","scores":{"correctness":4,"faithfulness":5,"relevance":5},"note":"Correctly explains both main points, but omits the disk-space risk if the replication-slot receiver falls behind."}
+{"sample_id":"s-037","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-038","scores":{"correctness":3,"faithfulness":3,"relevance":4},"note":"The first sentence says both statements create new triggers, which conflicts with the described replacement behavior."}
+{"sample_id":"s-039","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-040","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-041","scores":{"correctness":3,"faithfulness":3,"relevance":4},"note":"4096 is given as llama.cpp's default, not as a minimum for many models; the 2048-token recommendation is correct."}
+{"sample_id":"s-042","scores":{"correctness":2,"faithfulness":5,"relevance":4},"note":"Describes trustpinning for signed images, not the release-build Git-tag check specified by the reference."}
+{"sample_id":"s-043","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-044","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-045","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-046","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-047","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}
+{"sample_id":"s-048","scores":{"correctness":4,"faithfulness":3,"relevance":5},"note":"The command is supported, but the cited mapping example uses english_ispell, not english_hunspell."}
+{"sample_id":"s-049","scores":{"correctness":4,"faithfulness":5,"relevance":4},"note":"reference wrong — the supplied passages recommend upgrading Kubernetes patch/minor versions and clients; they do not support kubeadm config migrate."}
+{"sample_id":"s-050","scores":{"correctness":5,"faithfulness":5,"relevance":5},"note":""}

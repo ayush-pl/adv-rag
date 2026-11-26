@@ -53,11 +53,16 @@ class OllamaClient:
         temperature: float = 0.0,
         seed: int = 0,
         max_tokens: int | None = None,
+        context_tokens: int | None = None,
         json_schema: dict[str, Any] | None = None,
     ) -> Generation:
         options: dict[str, Any] = {"temperature": temperature, "seed": seed}
         if max_tokens is not None:
             options["num_predict"] = max_tokens
+        # Ollama silently drops the start of a prompt longer than its context window, so
+        # callers with long prompts must set the window explicitly.
+        if context_tokens is not None:
+            options["num_ctx"] = context_tokens
 
         payload: dict[str, Any] = {
             "model": model,

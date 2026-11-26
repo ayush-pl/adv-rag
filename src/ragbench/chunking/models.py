@@ -26,6 +26,31 @@ class ChunkingConfig(BaseModel):
         return f"{self.strategy}-{self.chunk_size}-{self.overlap}-{digest}"
 
 
+def parse_chunk_id(chunk_id: str) -> tuple[str, int, int]:
+    """Chunk IDs are `document_id::start-end`, so a ranking identifies passages by itself."""
+    document_id, _, span = chunk_id.rpartition("::")
+    start, end = span.split("-")
+    return document_id, int(start), int(end)
+
+
+def chunk_from_id(chunk_id: str) -> "Chunk":
+    """A chunk with only its location filled in, enough to match it against gold spans."""
+    document_id, start, end = parse_chunk_id(chunk_id)
+    return Chunk(
+        chunk_id=chunk_id,
+        document_id=document_id,
+        char_start=start,
+        char_end=end,
+        text="",
+        token_count=0,
+        section="",
+        source="",
+        source_url="",
+        title="",
+        version="",
+    )
+
+
 class Chunk(BaseModel):
     chunk_id: str
     document_id: str

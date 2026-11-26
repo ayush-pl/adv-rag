@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 from pydantic import BaseModel
 
-from ragbench.chunking.models import Chunk
+from ragbench.chunking.models import chunk_from_id
 from ragbench.dataset.models import Question
 from ragbench.evaluation.retrieval_metrics import evaluate_ranking
 from ragbench.experiments.config import RetrievalConfig
@@ -70,18 +70,16 @@ def rescore(
     """Recompute metrics for saved rankings after labels change, without retrieving again.
 
     Chunk IDs encode each passage's document and offsets, which is all that matching gold
-    spans needs. Returns None when the answerable questions differ, since new questions need
-    real retrieval.
+    spans needs. Withdrawn questions are dropped. Returns None when there are new answerable
+    questions, since they need real retrieval.
     """
-    from ragbench.dataset.pooling import parse_chunk_id
-
     by_id = {question.question_id: question for question in questions if question.answerable}
-    if set(by_id) != {result.question_id for result in results}:
+    if not set(by_id) <= {result.question_id for result in results}:
         return None
     rescored = []
-    for result in results:
+    for result in (r for r in results if r.question_id in by_id):
         question = by_id[result.question_id]
-        ranked = [_stub_chunk(*parse_chunk_id(chunk_id)) for chunk_id in result.chunk_ids]
+        ranked = [chunk_from_id(chunk_id) for chunk_id in result.chunk_ids]
         rescored.append(
             result.model_copy(
                 update={
@@ -91,22 +89,6 @@ def rescore(
             )
         )
     return rescored
-
-
-def _stub_chunk(document_id: str, start: int, end: int) -> Chunk:
-    return Chunk(
-        chunk_id=f"{document_id}::{start}-{end}",
-        document_id=document_id,
-        char_start=start,
-        char_end=end,
-        text="",
-        token_count=0,
-        section="",
-        source="",
-        source_url="",
-        title="",
-        version="",
-    )
 
 
 def summarize(

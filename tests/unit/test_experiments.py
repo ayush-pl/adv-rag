@@ -230,3 +230,7 @@ class TestRescore:
         results = run_retrieval(config(), [question("q1")], ScriptedRetriever(1))
         assert rescore(results, [question("q1"), question("q2")]) is None
         assert rescore(results, [question("q1"), question("u", answerable=False)]) is not None
+
+    def test_withdrawn_questions_are_dropped(self):
+        results = run_retrieval(config(), [question("q1"), question("q2")], ScriptedRetriever(1))
+        assert [r.question_id for r in rescore(results, [question("q2")])] == ["q2"]

@@ -20,7 +20,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 from pydantic import BaseModel
 
-from ragbench.chunking.models import Chunk
+from ragbench.chunking.models import chunk_from_id, parse_chunk_id  # noqa: F401
 from ragbench.dataset.drafting import locate_quote
 from ragbench.dataset.models import Question
 from ragbench.dataset.review import ReviewDecision, read_decisions
@@ -49,13 +49,6 @@ class Candidate:
     char_end: int
     best_rank: int
     configs: list[str] = field(default_factory=list)
-
-
-def parse_chunk_id(chunk_id: str) -> tuple[str, int, int]:
-    """Chunk IDs are `document_id::start-end`, so a ranking identifies passages by itself."""
-    document_id, _, span = chunk_id.rpartition("::")
-    start, end = span.split("-")
-    return document_id, int(start), int(end)
 
 
 def _overlaps(a: tuple[str, int, int], b: tuple[str, int, int]) -> bool:
@@ -111,19 +104,7 @@ def build_pool(
 
 
 def _is_labelled(question: Question, passage: tuple[str, int, int]) -> bool:
-    stub = Chunk(
-        chunk_id="",
-        document_id=passage[0],
-        char_start=passage[1],
-        char_end=passage[2],
-        text="",
-        token_count=0,
-        section="",
-        source="",
-        source_url="",
-        title="",
-        version="",
-    )
+    stub = chunk_from_id(f"{passage[0]}::{passage[1]}-{passage[2]}")
     return any(chunk_matches_span(stub, span) for g in question.evidence for span in g.spans)
 
 
