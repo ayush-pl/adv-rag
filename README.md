@@ -17,19 +17,44 @@ Full tables are in [reports](reports/).
 
 **Retrieval** ([retrieval_sweep_test.md](reports/retrieval_sweep_test.md))
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="reports/charts/retrieval-dark.svg">
+  <img alt="nDCG@10 on the test split: dense 0.654, BM25 0.673, hybrid 0.746, hybrid with reranking 0.810, hybrid with duplicate removal and reranking 0.820" src="reports/charts/retrieval-light.svg" width="760">
+</picture>
+
 | Configuration | Recall@5 | nDCG@10 | p50 latency |
 |---|---|---|---|
 | Dense, BGE-small | 0.738 [0.65, 0.82] | 0.654 | 15 ms |
 | BM25 | 0.748 [0.66, 0.83] | 0.673 | 110 ms |
 | Hybrid (RRF, k=60) | 0.817 [0.74, 0.89] | 0.746 | 134 ms |
-| Hybrid + cross-encoder rerank | **0.861** [0.80, 0.92] | **0.810** | 381 ms |
+| Hybrid + cross-encoder rerank | **0.861** [0.80, 0.92] | 0.810 | 381 ms |
+| Hybrid + duplicate removal + rerank | **0.861** [0.80, 0.92] | **0.820** | 374 ms |
 
 All on recursive 512-token chunks. Hybrid beats dense (nDCG@10 +0.09, interval excludes zero), and
 reranking adds +0.06 more. Recursive chunking beats fixed-size at 512 tokens. MiniLM, which reads
 only 256 tokens, trails BGE on Recall@5 with 512-token chunks.
 
+**Using the benchmark to fix a failure** ([retrieval_improvement.md](reports/retrieval_improvement.md)).
+Failure analysis showed PostgreSQL 15 and 16 twins filling result slots: 42% of chunks have a
+word-for-word copy, and 11–18% of the best configuration's top-5 slots held one. A retriever that
+drops repeated passages was chosen on development and calibration, its test comparison was fixed
+in advance, and the test labels were completed by blind judging of the passages it newly surfaced.
+On test it raised nDCG@10 by +0.010 [+0.003, +0.019] and MRR by +0.010, made no question worse,
+and left Recall@5 unchanged: it moves evidence up rather than finding new evidence. The selection
+estimate (+0.054) was five times larger, which the report discusses.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="reports/charts/dedup-dark.svg">
+  <img alt="Paired nDCG@10 gain from duplicate removal for five configurations, on the selection splits and on test. Every test interval is above zero or touches it; test gains are about +0.01 to +0.02, smaller than the selection estimates" src="reports/charts/dedup-light.svg" width="760">
+</picture>
+
 **Answers** ([generation_test.md](reports/generation_test.md)): share of answerable questions
 answered correctly, as scored by the calibrated judge.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="reports/charts/answers-dark.svg">
+  <img alt="Correct-answer rate on the test split by context for llama3.1:8b and gemma3:4b: dense 50% and 52%, hybrid 55% and 50%, hybrid with reranking 62% and 57%, gold passages 70% and 83%" src="reports/charts/answers-light.svg" width="760">
+</picture>
 
 | Generator | Dense | Hybrid | Hybrid + rerank | Gold passages (oracle) |
 |---|---|---|---|---|
@@ -78,7 +103,8 @@ unanswerable types, split into development (38), calibration (41) and test (116)
 2. A human verified each one: accepted, edited or rejected it, and confirmed the evidence span.
 3. **Pooled review for missed evidence.** Gold labels are rarely complete, so the top results of
    seven diverse configurations were pooled and judged by a human (TREC-style; depth 3 on
-   development, depth 2 on test, recorded in [pooling.json](data/datasets/v1/pooling.json)). This
+   development, depth 2 on test, recorded in [pooling.json](data/datasets/v1/pooling.json); a
+   configuration added later has its new top-5 passages judged before it is compared). This
    added evidence that would otherwise have counted against good retrievers.
 4. **Reference audit.** Questions that every oracle run failed were rechecked by a human, and fixed
    or withdrawn.
@@ -121,7 +147,9 @@ uv run python scripts/run_retrieval_sweep.py --split development   # 2 min
 uv run python scripts/run_retrieval_sweep.py --split test          # 5.5 min
 ```
 
-Each sweep rewrites `reports/retrieval_sweep_<split>.md`. Retrieval is deterministic: following
+Each sweep rewrites `reports/retrieval_sweep_<split>.md`. The duplicate-removal experiment is a
+second sweep file: `--sweep configs/retrieval_improvement.yaml`. `scripts/make_charts.py` redraws
+the README charts from the saved runs. Retrieval is deterministic: following
 these steps from a fresh clone reproduced every metric in both committed reports exactly, with the
 same corpus hash. Only latencies differ.
 

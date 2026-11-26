@@ -26,5 +26,12 @@
     ],
     "unanswerable_config": "r256-hybrid-bge-k60-rerank",
     "passages": 593
+  },
+  "comparisons": {
+    "test: r512-hybrid-bge-k60-rerank vs r512-hybrid-bge-k60-dedup-rerank": {
+      "depth": 5,
+      "passages": 54,
+      "questions": 34
+    }
   }
 }

@@ -880,3 +880,57 @@
 {"question_id":"q-f734617f00","document_id":"postgres-15/datatype-character","char_start":5160,"char_end":6032,"relevant":false,"quote":""}
 {"question_id":"q-fcf716cd24","document_id":"docker/dhi/explore/scanner-integrations","char_start":7725,"char_end":8206,"relevant":false,"quote":""}
 {"question_id":"q-fcf716cd24","document_id":"docker/dhi/explore/security-concepts/cves","char_start":5568,"char_end":6363,"relevant":false,"quote":""}
+{"question_id":"q-09d229cb6a","document_id":"postgres-15/sql-alteraggregate","char_start":1179,"char_end":2050,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-15/release-15-4","char_start":6364,"char_end":8083,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-16/errcodes-appendix","char_start":0,"char_end":2327,"relevant":false,"quote":""}
+{"question_id":"q-24d97208f9","document_id":"postgres-15/tutorial-inheritance","char_start":0,"char_end":2044,"relevant":true,"quote":"In PostgreSQL, a table can inherit from zero or more other tables."}
+{"question_id":"q-2a3403808d","document_id":"postgres-15/plpgsql-errors-and-messages","char_start":0,"char_end":2057,"relevant":false,"quote":""}
+{"question_id":"q-2a3403808d","document_id":"postgres-15/plpgsql-statements","char_start":22063,"char_end":22250,"relevant":false,"quote":""}
+{"question_id":"q-2bb12e1823","document_id":"postgres-16/hot-standby","char_start":9443,"char_end":11866,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/indexes-multicolumn","char_start":0,"char_end":906,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/ddl-basics","char_start":3015,"char_end":4465,"relevant":true,"quote":"There is a limit on how many columns a table can contain. Depending on the column types, it is between 250 and 1600."}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/arrays","char_start":0,"char_end":226,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-15/runtime-config-developer","char_start":0,"char_end":1909,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-16/sql-createrole","char_start":5682,"char_end":7808,"relevant":false,"quote":""}
+{"question_id":"q-601707f9bf","document_id":"postgres-15/app-postgres","char_start":11915,"char_end":13297,"relevant":true,"quote":"A failure message mentioning `semget` or `shmget` probably indicates you need to configure your kernel to provide adequate shared memory and semaphores."}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-15/app-pgresetwal","char_start":3901,"char_end":4655,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"kubernetes/concepts/configuration/secret","char_start":17178,"char_end":18732,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-16/app-pgresetwal","char_start":3901,"char_end":4655,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-15/view-pg-locks","char_start":3787,"char_end":5986,"relevant":false,"quote":""}
+{"question_id":"q-6d485a90d2","document_id":"postgres-15/sql-createcast","char_start":7910,"char_end":9798,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-16/release-16-11","char_start":11063,"char_end":13128,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/runtime-config-error-handling","char_start":0,"char_end":1798,"relevant":false,"quote":""}
+{"question_id":"q-751be7b68d","document_id":"postgres-15/functions-matching","char_start":25566,"char_end":26618,"relevant":false,"quote":""}
+{"question_id":"q-751be7b68d","document_id":"postgres-16/auth-pg-hba-conf","char_start":6525,"char_end":8351,"relevant":false,"quote":""}
+{"question_id":"q-808c8481c2","document_id":"postgres-16/sql-createforeigntable","char_start":4274,"char_end":6498,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-15/plperl-funcs","char_start":2303,"char_end":4301,"relevant":false,"quote":""}
+{"question_id":"q-858a88dba0","document_id":"postgres-15/plpgsql-porting","char_start":0,"char_end":480,"relevant":false,"quote":""}
+{"question_id":"q-858a88dba0","document_id":"postgres-15/plpgsql-control-structures","char_start":16632,"char_end":18497,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/sql-do","char_start":764,"char_end":1374,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/app-pgrestore","char_start":178,"char_end":1357,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-15/ecpg-pgtypes","char_start":21734,"char_end":23416,"relevant":false,"quote":""}
+{"question_id":"q-a007b1da59","document_id":"docker/engine/network/drivers/host","char_start":3278,"char_end":3911,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"docker/engine/daemon/troubleshoot","char_start":8725,"char_end":10406,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"kubernetes/tutorials/security/seccomp","char_start":1132,"char_end":2114,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-16/sql-copy","char_start":26231,"char_end":27705,"relevant":false,"quote":""}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-15/sql-alterdatabase","char_start":686,"char_end":2445,"relevant":false,"quote":""}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-15/sql-altertable","char_start":33410,"char_end":35725,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-15/functions-datetime","char_start":21619,"char_end":22691,"relevant":false,"quote":""}
+{"question_id":"q-c398b30cfd","document_id":"postgres-15/sql-alteropfamily","char_start":2529,"char_end":4642,"relevant":false,"quote":""}
+{"question_id":"q-c398b30cfd","document_id":"postgres-15/sql-dropopfamily","char_start":1158,"char_end":1447,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-16/sql-vacuum","char_start":7085,"char_end":8760,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/functions-net","char_start":0,"char_end":1559,"relevant":false,"quote":""}
+{"question_id":"q-d0696f0dda","document_id":"docker/engine/install/rhel","char_start":4779,"char_end":6432,"relevant":false,"quote":""}
+{"question_id":"q-d0696f0dda","document_id":"docker/engine/install/raspberry-pi-os","char_start":6716,"char_end":8275,"relevant":false,"quote":""}
+{"question_id":"q-d0696f0dda","document_id":"docker/engine/install/ubuntu","char_start":5689,"char_end":7239,"relevant":false,"quote":""}
+{"question_id":"q-d0f7657576","document_id":"postgres-16/install-make","char_start":10610,"char_end":12428,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-15/functions-geometry","char_start":9341,"char_end":10538,"relevant":false,"quote":""}
+{"question_id":"q-e55709b732","document_id":"postgres-15/indexes-types","char_start":527,"char_end":1870,"relevant":false,"quote":""}
+{"question_id":"q-ee078af201","document_id":"postgres-15/datatype-oid","char_start":0,"char_end":1805,"relevant":false,"quote":""}
+{"question_id":"q-ee078af201","document_id":"postgres-15/information-schema","char_start":0,"char_end":590,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/engine/install/fedora","char_start":5020,"char_end":6698,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-15/database-roles","char_start":2213,"char_end":2696,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-16/rules-views","char_start":0,"char_end":805,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-15/information-schema","char_start":0,"char_end":590,"relevant":false,"quote":""}
+{"question_id":"q-24d97208f9","document_id":"postgres-15/ddl-inherit","char_start":0,"char_end":2109,"relevant":true,"quote":"In PostgreSQL, a table can inherit from zero or more other tables"}
+{"question_id":"q-601707f9bf","document_id":"postgres-15/kernel-resources","char_start":10427,"char_end":11676,"relevant":true,"quote":"Other recommended kernel setting changes for database servers which will have a large number of connections are:\n\n```\nproject.max-shm-ids=(priv,32768,deny)\nproject.max-sem-ids=(priv,4096,deny)\nproject.max-msg-ids=(priv,4096,deny)\n```"}

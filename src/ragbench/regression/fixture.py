@@ -23,6 +23,7 @@ from ragbench.experiments.config import RetrievalConfig
 from ragbench.generation.rag_pipeline import GeneratedAnswer
 from ragbench.retrieval.base import Retriever
 from ragbench.retrieval.bm25 import BM25Retriever
+from ragbench.retrieval.dedup import DeduplicatingRetriever
 from ragbench.retrieval.dense import DenseRetriever
 from ragbench.retrieval.hybrid import HybridRetriever
 
@@ -97,6 +98,10 @@ class Fixture:
     def retriever(self, config: RetrievalConfig) -> Retriever:
         if config.rerank:
             raise ValueError("The fixture has no reranker scores, so it cannot rerank")
+        retriever = self._base_retriever(config)
+        return DeduplicatingRetriever(retriever) if config.dedup else retriever
+
+    def _base_retriever(self, config: RetrievalConfig) -> Retriever:
         if config.method == "bm25":
             return BM25Retriever(self.chunks)
         if config.embedder != self.manifest.embedder:

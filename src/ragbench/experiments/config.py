@@ -23,6 +23,8 @@ class RetrievalConfig(BaseModel):
     hybrid_depth: int = 100
     rerank: bool = False
     rerank_candidates: int = 20
+    # Drop passages that repeat a higher-ranked one word for word, before any reranking.
+    dedup: bool = False
     top_k: int = Field(default=20, gt=0)
 
     @model_validator(mode="after")
@@ -35,7 +37,9 @@ class RetrievalConfig(BaseModel):
 
     @property
     def config_id(self) -> str:
-        settings = self.model_dump_json(exclude={"name"})
+        # Settings added later are left out at their default, so existing IDs don't change.
+        excluded = {"name"} | ({"dedup"} if not self.dedup else set())
+        settings = self.model_dump_json(exclude=excluded)
         return hashlib.sha256(settings.encode()).hexdigest()[:8]
 
     @property

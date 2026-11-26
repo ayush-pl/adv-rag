@@ -21,7 +21,9 @@ DATASET_DIR = DATA_DIR / "datasets" / "v1"
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--split", default="development", choices=["development", "test"])
+    parser.add_argument(
+        "--split", default="development", choices=["development", "calibration", "test"]
+    )
     parser.add_argument("--sweep", type=Path, default=Path("configs/retrieval_sweep.yaml"))
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
@@ -80,8 +82,9 @@ def main() -> None:
             flush=True,
         )
 
-    report = render_report(spec, runs, f"Retrieval sweep on the {args.split} split")
-    output = Path("reports") / f"retrieval_sweep_{args.split}.md"
+    report = render_report(spec, runs, f"{spec.title} on the {args.split} split")
+    # configs/retrieval_sweep.yaml writes reports/retrieval_sweep_<split>.md, and so on.
+    output = Path("reports") / f"{args.sweep.stem}_{args.split}.md"
     output.parent.mkdir(exist_ok=True)
     output.write_text(report, encoding="utf-8", newline="\n")
     print(f"\nReport written to {output}")

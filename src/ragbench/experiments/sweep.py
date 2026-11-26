@@ -16,6 +16,7 @@ class RunGroup(BaseModel):
     embedder: str | None = None
     rrf_k: list[int] = [60]
     rerank: bool = False
+    dedup: bool = False
 
 
 class Comparison(BaseModel):
@@ -25,6 +26,7 @@ class Comparison(BaseModel):
 
 
 class SweepSpec(BaseModel):
+    title: str = "Retrieval sweep"
     chunking: dict[str, ChunkingChoice]
     embedders: dict[str, str]
     runs: list[RunGroup]
@@ -43,6 +45,8 @@ def expand_sweep(spec: SweepSpec) -> list[RetrievalConfig]:
                     parts.append(group.embedder)
                 if group.method == "hybrid":
                     parts.append(f"k{rrf_k}")
+                if group.dedup:
+                    parts.append("dedup")
                 if group.rerank:
                     parts.append("rerank")
                 name = "-".join(parts)
@@ -55,6 +59,7 @@ def expand_sweep(spec: SweepSpec) -> list[RetrievalConfig]:
                     embedder=spec.embedders[group.embedder] if group.embedder else None,
                     rrf_k=rrf_k,
                     rerank=group.rerank,
+                    dedup=group.dedup,
                 )
 
     names = set(configs)

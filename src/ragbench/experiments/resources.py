@@ -12,6 +12,7 @@ from ragbench.experiments.config import ChunkingChoice, RetrievalConfig
 from ragbench.experiments.tracker import read_lock
 from ragbench.retrieval.base import Retriever
 from ragbench.retrieval.bm25 import BM25Retriever
+from ragbench.retrieval.dedup import DeduplicatingRetriever
 from ragbench.retrieval.dense import DenseRetriever
 from ragbench.retrieval.hybrid import HybridRetriever, RerankingRetriever
 
@@ -73,6 +74,8 @@ class Resources:
                 rrf_k=config.rrf_k,
                 depth=config.hybrid_depth,
             )
+        if config.dedup:
+            retriever = DeduplicatingRetriever(retriever)
         if config.rerank:
             retriever = RerankingRetriever(
                 retriever, self._cross_encoder(), config.rerank_candidates

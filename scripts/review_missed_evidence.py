@@ -5,6 +5,11 @@ export  pool the top results of several configurations into a sheet. Retrieving 
         wsl.exe -e bash scripts/wsl.sh python scripts/review_missed_evidence.py export
 import  add passages marked y as evidence, withdraw unanswerable questions that turn out
         to be answered, and record every judgment
+
+export --compare BASELINE TREATMENT pools only the passages in one configuration's top
+--depth results but not the other's, to judge before comparing a new configuration with an
+old one on labels that were pooled without it. Rows go to a separate sheet, and the main pool
+settings in pooling.json are left as they were.
 """
 
 import argparse
@@ -14,6 +19,7 @@ from pathlib import Path
 
 import yaml
 
+from ragbench.chunking.models import parse_chunk_id
 from ragbench.dataset.models import read_questions
 from ragbench.dataset.pooling import (
     append_judgments,
@@ -25,6 +31,7 @@ from ragbench.dataset.pooling import (
 from ragbench.dataset.review import append_decision
 from ragbench.experiments.runner import load_run
 from ragbench.ingestion.corpus_manager import load_documents
+from ragbench.retrieval.dedup import duplicate_key
 
 DATA_DIR = Path("data")
 DATASET_DIR = DATA_DIR / "datasets" / "v1"
@@ -58,9 +65,11 @@ def main() -> None:
     parser.add_argument("--split", default="development")
     parser.add_argument("--sheet", type=Path)
     parser.add_argument("--depth", type=int, default=DEPTH, help="results pooled per config")
+    parser.add_argument("--compare", nargs=2, metavar=("BASELINE", "TREATMENT"))
     args = parser.parse_args()
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    sheet = args.sheet or DATASET_DIR / f"review_sheet_missed_evidence_{args.split}.xlsx"
+    suffix = f"_{args.compare[1]}" if args.compare else ""
+    sheet = args.sheet or DATASET_DIR / f"review_sheet_missed_evidence_{args.split}{suffix}.xlsx"
     documents = {d.document_id: d for d in load_documents(DATA_DIR / "processed" / "v1")}
     judgments = read_judgments(JUDGMENTS_PATH)
 
@@ -84,6 +93,9 @@ def main() -> None:
 
     questions = read_questions(DATASET_DIR / f"{args.split}.jsonl")
     runs_root = DATA_DIR / "runs" / "retrieval" / args.split
+    if args.compare:
+        _export_comparison(args, questions, runs_root, documents, judgments, sheet)
+        return
     rankings = {}
     for directory in sorted(runs_root.iterdir()):
         record, results = load_run(directory)
@@ -115,6 +127,50 @@ def main() -> None:
     }
     POOLING_PATH.write_text(json.dumps(pooling, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Wrote {len(candidates)} passages for {len(questions)} questions into {sheet}")
+
+
+def _export_comparison(args, questions, runs_root, documents, judgments, sheet: Path) -> None:
+    """Passages in one configuration's top results but not the other's.
+
+    Passages in both lists count the same for both configurations, so only the differences can
+    change the comparison. Text identical to a passage in the other list (a PostgreSQL 15 and 16
+    twin) is not a difference.
+    """
+    rankings = {}
+    for name in args.compare:
+        directories = [d for d in runs_root.iterdir() if d.name.rsplit("-", 1)[0] == name]
+        if len(directories) != 1:
+            raise SystemExit(f"Expected one {args.split} run of {name}, found {len(directories)}")
+        _, results = load_run(directories[0])
+        rankings[name] = {r.question_id: r.chunk_ids[: args.depth] for r in results}
+
+    def text(chunk_id: str) -> str:
+        document_id, start, end = parse_chunk_id(chunk_id)
+        return duplicate_key(documents[document_id].content[start:end])
+
+    differing: dict[str, dict[str, list[str]]] = {name: {} for name in args.compare}
+    for name, other in (args.compare, args.compare[::-1]):
+        for question_id, chunk_ids in rankings[name].items():
+            other_texts = {text(c) for c in rankings[other].get(question_id, [])}
+            differing[name][question_id] = [c for c in chunk_ids if text(c) not in other_texts]
+
+    answerable = [q for q in questions if q.answerable]
+    candidates = build_pool(answerable, differing, args.depth, judgments)
+    try:
+        export_pool(candidates, documents, sheet)
+    except PermissionError as exc:
+        raise SystemExit(f"Cannot write {sheet}. Close it in Excel first.") from exc
+    pooling = json.loads(POOLING_PATH.read_text(encoding="utf-8")) if POOLING_PATH.exists() else {}
+    pooling.setdefault("comparisons", {})[f"{args.split}: {' vs '.join(args.compare)}"] = {
+        "depth": args.depth,
+        "passages": len(candidates),
+        "questions": len({c.question.question_id for c in candidates}),
+    }
+    POOLING_PATH.write_text(json.dumps(pooling, indent=2) + "\n", encoding="utf-8", newline="\n")
+    print(
+        f"Wrote {len(candidates)} passages for "
+        f"{len({c.question.question_id for c in candidates})} questions into {sheet}"
+    )
 
 
 def _retrieve_unanswerable(questions, depth: int) -> dict[str, list[str]]:
