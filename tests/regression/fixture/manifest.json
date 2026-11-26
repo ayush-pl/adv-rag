@@ -1,0 +1,71 @@
+{
+  "description": "Development and calibration questions with the passages real retrievers return for them. See scripts/regression_gate.py.",
+  "splits": [
+    "development",
+    "calibration"
+  ],
+  "dataset_hash": "sha256-72eed53de9d777f54297347fcc2129a4536b64b15d0ea650eafffdcf65290042",
+  "corpus_hash": "sha256-9e14d8a33aa10018fddc0650c66ef0f7ac326c6d91c51b9394fd47c0f57ff080",
+  "chunking": "recursive-512-50-6533d38e",
+  "embedder": "BAAI/bge-small-en-v1.5",
+  "embedder_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "pooled_from": [
+    "r512-dense-bge",
+    "r512-bm25",
+    "r512-hybrid-bge-k60"
+  ],
+  "pool_depth": 20,
+  "configs": [
+    {
+      "name": "r512-dense-bge",
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 512,
+        "overlap": 50
+      },
+      "method": "dense",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "rrf_k": 60,
+      "hybrid_depth": 100,
+      "rerank": false,
+      "rerank_candidates": 20,
+      "top_k": 20
+    },
+    {
+      "name": "r512-bm25",
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 512,
+        "overlap": 50
+      },
+      "method": "bm25",
+      "embedder": null,
+      "rrf_k": 60,
+      "hybrid_depth": 100,
+      "rerank": false,
+      "rerank_candidates": 20,
+      "top_k": 20
+    },
+    {
+      "name": "r512-hybrid-bge-k60",
+      "chunking": {
+        "strategy": "recursive",
+        "chunk_size": 512,
+        "overlap": 50
+      },
+      "method": "hybrid",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "rrf_k": 60,
+      "hybrid_depth": 100,
+      "rerank": false,
+      "rerank_candidates": 20,
+      "top_k": 20
+    }
+  ],
+  "generation_runs": [
+    "r512-hybrid-bge-k60-83e17a5e__llama3.1-8b__retrieved__grounded-v1",
+    "r256-hybrid-bge-k60-rerank-d354ef52__gemma3-4b__retrieved__grounded-v1",
+    "r512-overlap50__llama3.1-8b__oracle__grounded-v1"
+  ],
+  "licenses": "Chunk text is from the Kubernetes documentation (CC BY 4.0), the Docker documentation (Apache License 2.0) and the PostgreSQL documentation (PostgreSQL License). Each chunk keeps its source URL."
+}
