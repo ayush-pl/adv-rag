@@ -1,0 +1,26 @@
+# docker compose up --build, then open http://localhost:8000/docs
+#
+# Needs the pipeline outputs in ./data (see the README) and an Ollama server on the host with
+# the generation models pulled. The container reaches it at host.docker.internal; set
+# OLLAMA_HOST to use another server.
+services:
+  api:
+    build: .
+    image: advanced-rag-bench:latest
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
+      RAGBENCH_API_KEY: ${RAGBENCH_API_KEY:-}
+      RAGBENCH_QUERY_TIMEOUT_S: ${RAGBENCH_QUERY_TIMEOUT_S:-180}
+    extra_hosts:
+      # Makes host.docker.internal work on Linux engines too, not only Docker Desktop.
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./data:/app/data:ro
+      # Embedding and reranker models, downloaded on first use and kept between runs.
+      - hf-cache:/cache/huggingface
+    restart: unless-stopped
+
+volumes:
+  hf-cache:

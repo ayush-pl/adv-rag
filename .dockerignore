@@ -1,0 +1,11 @@
+# Only pyproject.toml, uv.lock, README.md, LICENSE, src, configs and reports go into the image.
+# data/ is mounted at runtime.
+*
+!pyproject.toml
+!uv.lock
+!README.md
+!LICENSE
+!src/
+!configs/
+!reports/
+**/__pycache__

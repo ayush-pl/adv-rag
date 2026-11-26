@@ -1,0 +1,11 @@
+# For Docker Engine inside WSL with mirrored networking, when Ollama runs on Windows and
+# listens only on 127.0.0.1. The container shares the host network, so localhost reaches it:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.wsl.yml up --build
+services:
+  api:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: !reset []
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-http://localhost:11434}

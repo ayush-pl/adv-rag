@@ -44,3 +44,32 @@ jobs:
         # every run shows what a change did to the benchmark.
         if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: uv run python scripts/regression_gate.py check
+
+  docker:
+    # Builds the image and starts the API. There is no Ollama or corpus here, so /health
+    # must answer "degraded"; /query is checked by hand against a real Ollama.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: docker compose build
+
+      - name: Start and check /health
+        run: |
+          docker compose up -d
+          for i in $(seq 1 30); do curl -sf localhost:8000/health && break; sleep 2; done
+          echo
+          curl -sf localhost:8000/health | python3 -c "
+          import json, sys
+          health = json.load(sys.stdin)
+          assert health['status'] == 'degraded', health
+          assert health['ollama'] == 'unreachable', health
+          assert len(health['configs']) == 23, health
+          print('health ok:', health['status'], len(health['configs']), 'configs')
+          "
+
+      - name: Logs
+        if: ${{ always() }}
+        run: docker compose logs api
