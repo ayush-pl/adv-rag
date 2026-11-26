@@ -22,4 +22,5 @@ def reciprocal_rank_fusion(
             chunks[chunk_id] = result.chunk
 
     results = [ScoredChunk(chunks[chunk_id], score) for chunk_id, score in fused.items()]
-    return sort_by_score(results)[:top_k]
+    # DELIBERATE REGRESSION for the CI demo: worst-fused passages first. Do not merge.
+    return sort_by_score(results)[::-1][:top_k]
