@@ -26,6 +26,7 @@ jobs:
           enable-cache: true
 
       - name: Install
+        id: install
         # No extras: PyTorch and model inference are not needed here.
         run: uv sync --locked
 
@@ -39,5 +40,7 @@ jobs:
 
       - name: Regression gate
         # Fails on a confirmed drop. An inconclusive result passes with a warning annotation,
-        # and the full report is in the job summary.
+        # and the full report is in the job summary. Runs even when lint or tests fail, so
+        # every run shows what a change did to the benchmark.
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: uv run python scripts/regression_gate.py check
