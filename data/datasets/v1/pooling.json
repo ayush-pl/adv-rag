@@ -1,0 +1,30 @@
+{
+  "development": {
+    "depth": 3,
+    "configs": [
+      "r512-dense-bge",
+      "r512-dense-minilm",
+      "r512-bm25",
+      "f256-bm25",
+      "r512-hybrid-bge-k60",
+      "r256-hybrid-bge-k60-rerank",
+      "r512-hybrid-bge-k60-rerank"
+    ],
+    "unanswerable_config": "r256-hybrid-bge-k60-rerank",
+    "passages": 289
+  },
+  "test": {
+    "depth": 2,
+    "configs": [
+      "r512-dense-bge",
+      "r512-dense-minilm",
+      "r512-bm25",
+      "f256-bm25",
+      "r512-hybrid-bge-k60",
+      "r256-hybrid-bge-k60-rerank",
+      "r512-hybrid-bge-k60-rerank"
+    ],
+    "unanswerable_config": "r256-hybrid-bge-k60-rerank",
+    "passages": 593
+  }
+}

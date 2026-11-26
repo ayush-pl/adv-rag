@@ -287,3 +287,596 @@
 {"question_id":"q-d8195c9e00","document_id":"docker/ai/sandboxes/customize/kits-v2","char_start":30632,"char_end":31441,"relevant":false,"quote":""}
 {"question_id":"q-f7d98fd658","document_id":"postgres-15/ddl-depend","char_start":0,"char_end":1735,"relevant":true,"quote":"and all the dependent objects will be removed, as will any objects that depend on them, recursively."}
 {"question_id":"q-f7d98fd658","document_id":"postgres-16/ddl-depend","char_start":0,"char_end":1735,"relevant":true,"quote":"and all the dependent objects will be removed, as will any objects that depend on them, recursively."}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datatype-datetime","char_start":6861,"char_end":8318,"relevant":true,"quote":"1999-01-08 04:05:06 -8:00"}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datatype-datetime","char_start":7979,"char_end":9067,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datatype-datetime","char_start":12285,"char_end":14168,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datatype-datetime","char_start":14170,"char_end":15396,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datatype-datetime","char_start":15964,"char_end":17715,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-15/datetime-posix-timezone-specs","char_start":0,"char_end":1958,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datatype-datetime","char_start":6861,"char_end":8318,"relevant":true,"quote":"1999-01-08 04:05:06 -8:00"}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datatype-datetime","char_start":7979,"char_end":9067,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datatype-datetime","char_start":12285,"char_end":14168,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datatype-datetime","char_start":14170,"char_end":15396,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datatype-datetime","char_start":15964,"char_end":17715,"relevant":false,"quote":""}
+{"question_id":"q-0722e177b3","document_id":"postgres-16/datetime-posix-timezone-specs","char_start":0,"char_end":1958,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/ai/gordon/how-to/configure-tools","char_start":1687,"char_end":2033,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/build/policies/validate-git","char_start":417,"char_end":580,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/desktop/enterprise/hardened-desktop/air-gapped-containers","char_start":1952,"char_end":2239,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management","char_start":0,"char_end":1474,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management/configure-admin-console","char_start":0,"char_end":1193,"relevant":true,"quote":"your organization needs to verify a domain before the policies take effect."}
+{"question_id":"q-079cea790a","document_id":"docker/ai/sandboxes/governance/access-controls/organization","char_start":0,"char_end":1257,"relevant":false,"quote":""}
+{"question_id":"q-079cea790a","document_id":"docker/build/policies/validate-images","char_start":447,"char_end":610,"relevant":false,"quote":""}
+{"question_id":"q-09d229cb6a","document_id":"postgres-15/sql-alteraggregate","char_start":545,"char_end":1177,"relevant":false,"quote":""}
+{"question_id":"q-09d229cb6a","document_id":"postgres-15/sql-alteraggregate","char_start":2521,"char_end":3145,"relevant":true,"quote":"ALTER AGGREGATE myavg(integer) RENAME TO my_average;"}
+{"question_id":"q-09d229cb6a","document_id":"postgres-16/sql-alteraggregate","char_start":545,"char_end":1163,"relevant":false,"quote":""}
+{"question_id":"q-09d229cb6a","document_id":"postgres-16/sql-alteraggregate","char_start":2507,"char_end":3131,"relevant":true,"quote":"ALTER AGGREGATE myavg(integer) OWNER TO joe;"}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/concepts/security/hardening-guide/authentication-mechanisms","char_start":3879,"char_end":4607,"relevant":false,"quote":""}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/concepts/security/service-accounts","char_start":8324,"char_end":9837,"relevant":false,"quote":""}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/tutorials/stateful-application/cassandra","char_start":0,"char_end":1170,"relevant":false,"quote":""}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/tutorials/stateful-application/cassandra","char_start":1796,"char_end":2396,"relevant":false,"quote":""}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/reference/command-line-tools-reference/kubelet","char_start":44876,"char_end":46187,"relevant":false,"quote":""}
+{"question_id":"q-1382e9cbe7","document_id":"kubernetes/tutorials/stateful-application/cassandra","char_start":920,"char_end":2045,"relevant":false,"quote":""}
+{"question_id":"q-16dec610cf","document_id":"docker/dhi/explore/what","char_start":0,"char_end":1338,"relevant":true,"quote":"Docker Hardened Images take a minimal-by-design approach\nto help reduce image size, limit the attack surface, and streamline security and\ncompliance workflows."}
+{"question_id":"q-16dec610cf","document_id":"docker/dhi/explore/responsibility","char_start":3176,"char_end":3460,"relevant":false,"quote":""}
+{"question_id":"q-16dec610cf","document_id":"docker/dhi/explore/security-concepts/distroless","char_start":1608,"char_end":2613,"relevant":false,"quote":""}
+{"question_id":"q-16dec610cf","document_id":"docker/docker-hub/mcp-server","char_start":7026,"char_end":7496,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-15/plpgsql-control-structures","char_start":26251,"char_end":28294,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-15/release-15-2","char_start":12550,"char_end":14474,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-15/xfunc-c","char_start":48354,"char_end":49253,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-16/xfunc-c","char_start":48547,"char_end":48945,"relevant":false,"quote":""}
+{"question_id":"q-1a5e9b8417","document_id":"postgres-16/plpgsql-control-structures","char_start":26251,"char_end":28294,"relevant":false,"quote":""}
+{"question_id":"q-1cb5aac0b1","document_id":"docker/desktop/troubleshoot-and-support/faqs/macfaqs","char_start":3330,"char_end":4398,"relevant":true,"quote":"client certificates (used to authenticate to\nregistries) to your Docker daemon."}
+{"question_id":"q-1cb5aac0b1","document_id":"docker/desktop/troubleshoot-and-support/troubleshoot/topics","char_start":966,"char_end":1313,"relevant":false,"quote":""}
+{"question_id":"q-1cb5aac0b1","document_id":"postgres-15/ssl-tcp","char_start":639,"char_end":2754,"relevant":false,"quote":""}
+{"question_id":"q-1cb5aac0b1","document_id":"docker/engine/security/certificates","char_start":2561,"char_end":3177,"relevant":true,"quote":"client.cert          <-- Client certificate"}
+{"question_id":"q-1cb5aac0b1","document_id":"docker/engine/security/protect-access","char_start":7689,"char_end":8551,"relevant":false,"quote":""}
+{"question_id":"q-1cb5aac0b1","document_id":"kubernetes/reference/access-authn-authz/authentication","char_start":16148,"char_end":16933,"relevant":false,"quote":""}
+{"question_id":"q-1cb5aac0b1","document_id":"postgres-15/ssl-tcp","char_start":4373,"char_end":4950,"relevant":true,"quote":"add the authentication option `clientcert=verify-ca` or `clientcert=verify-full` to the appropriate `hostssl` line(s) in `pg_hba.conf`."}
+{"question_id":"q-1cb5aac0b1","document_id":"postgres-16/ssl-tcp","char_start":639,"char_end":2754,"relevant":false,"quote":""}
+{"question_id":"q-203820d5e5","document_id":"kubernetes/concepts/cluster-administration/admission-webhooks-good-practices","char_start":427,"char_end":1235,"relevant":true,"quote":"Admission controllers intercept requests that\nmatch specific criteria that you define."}
+{"question_id":"q-203820d5e5","document_id":"kubernetes/concepts/cluster-administration/admission-webhooks-good-practices","char_start":1909,"char_end":3091,"relevant":true,"quote":"mutating or validating admission\nwebhooks."}
+{"question_id":"q-203820d5e5","document_id":"kubernetes/concepts/cluster-administration/admission-webhooks-good-practices","char_start":2644,"char_end":4658,"relevant":true,"quote":"Kubernetes includes multiple admission control and policy enforcement options."}
+{"question_id":"q-203820d5e5","document_id":"kubernetes/concepts/cluster-administration/admission-webhooks-good-practices","char_start":17861,"char_end":18273,"relevant":false,"quote":""}
+{"question_id":"q-20685e0c54","document_id":"kubernetes/concepts/workloads/compositepodgroup-api","char_start":386,"char_end":906,"relevant":true,"quote":"A `CompositePodGroup` represents a grouping of child groups (which can be `CompositePodGroup` or\n`PodGroup` objects)."}
+{"question_id":"q-20685e0c54","document_id":"kubernetes/concepts/workloads/compositepodgroup-api","char_start":3217,"char_end":3861,"relevant":true,"quote":"descendant `CompositePodGroup` objects, and leaf `PodGroup` objects in a top-down manner."}
+{"question_id":"q-2179892d10","document_id":"docker/build/building/multi-platform","char_start":2799,"char_end":3782,"relevant":false,"quote":""}
+{"question_id":"q-2179892d10","document_id":"docker/build/building/multi-platform","char_start":3784,"char_end":4035,"relevant":false,"quote":""}
+{"question_id":"q-2179892d10","document_id":"docker/dhi/how-to/customize","char_start":968,"char_end":3074,"relevant":false,"quote":""}
+{"question_id":"q-2179892d10","document_id":"docker/dhi/how-to/customize","char_start":6725,"char_end":7810,"relevant":false,"quote":""}
+{"question_id":"q-2179892d10","document_id":"docker/dhi/how-to/select-enterprise","char_start":5904,"char_end":6796,"relevant":false,"quote":""}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/access-controls/local","char_start":13321,"char_end":14264,"relevant":true,"quote":"A host that a network rule allows can still have individual methods or paths\ndenied by an HTTP rule."}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/access-controls/mcp","char_start":0,"char_end":1365,"relevant":false,"quote":""}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/access-controls/network","char_start":6585,"char_end":7648,"relevant":false,"quote":""}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/concepts","char_start":11143,"char_end":12675,"relevant":true,"quote":"Deny wins: if any rule matches with `decision: deny`, the request is denied,\n  regardless of any matching allow rules."}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/security/defaults","char_start":3116,"char_end":3574,"relevant":false,"quote":""}
+{"question_id":"q-22fded0323","document_id":"docker/build/policies/usage","char_start":3272,"char_end":4450,"relevant":false,"quote":""}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/access-controls/network","char_start":1456,"char_end":2344,"relevant":true,"quote":"a network deny blocks the\ndestination outright and no HTTP allow can reopen it."}
+{"question_id":"q-22fded0323","document_id":"docker/ai/sandboxes/governance/concepts","char_start":182,"char_end":2129,"relevant":true,"quote":"When organization governance is active, only organization allow rules can grant\naccess. Local and kit-defined deny rules still apply on top."}
+{"question_id":"q-22fded0323","document_id":"docker/build/policies/intro","char_start":1144,"char_end":2676,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/reference/kubectl/kubectl","char_start":0,"char_end":109,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/tutorials","char_start":0,"char_end":352,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/tutorials/security","char_start":0,"char_end":303,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/reference/kubectl","char_start":792,"char_end":2694,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/reference/kubectl/introduction","char_start":336,"char_end":976,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/tasks/job/parallel-processing-expansion","char_start":812,"char_end":1711,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/tutorials/kubernetes-basics/expose/expose-intro","char_start":4303,"char_end":6124,"relevant":false,"quote":""}
+{"question_id":"q-249e35b6e4","document_id":"kubernetes/tutorials/stateless-application/guestbook","char_start":14274,"char_end":14625,"relevant":false,"quote":""}
+{"question_id":"q-24d97208f9","document_id":"postgres-15/sql-createtable","char_start":59755,"char_end":60012,"relevant":true,"quote":"Multiple inheritance via the `INHERITS` clause is a PostgreSQL language extension."}
+{"question_id":"q-24d97208f9","document_id":"postgres-16/sql-createtable","char_start":60635,"char_end":60892,"relevant":true,"quote":"Multiple inheritance via the `INHERITS` clause is a PostgreSQL language extension."}
+{"question_id":"q-255d06cd4b","document_id":"docker/desktop/troubleshoot-and-support/faqs/linuxfaqs","char_start":4247,"char_end":5263,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/build/concepts/context","char_start":12278,"char_end":13765,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/desktop/setup/install/mac-install","char_start":1503,"char_end":1910,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/desktop/troubleshoot-and-support/faqs/linuxfaqs","char_start":6910,"char_end":7417,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/desktop/troubleshoot-and-support/faqs/macfaqs","char_start":916,"char_end":1937,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/engine/containers/resource_constraints","char_start":841,"char_end":2664,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"docker/engine/storage/drivers/windowsfilter-driver","char_start":325,"char_end":1002,"relevant":false,"quote":""}
+{"question_id":"q-255d06cd4b","document_id":"kubernetes/concepts/cluster-administration/logging","char_start":14160,"char_end":15143,"relevant":false,"quote":""}
+{"question_id":"q-27086931d0","document_id":"docker/build/concepts/dockerfile","char_start":0,"char_end":1385,"relevant":false,"quote":""}
+{"question_id":"q-27086931d0","document_id":"docker/ai/skills/install","char_start":2145,"char_end":2800,"relevant":true,"quote":"Antigravity reads standard `SKILL.md` directories from your workspace's\n`.agents/skills/`."}
+{"question_id":"q-27086931d0","document_id":"docker/ai/skills/install","char_start":3541,"char_end":4100,"relevant":false,"quote":""}
+{"question_id":"q-27086931d0","document_id":"docker/ai/skills/install","char_start":4914,"char_end":6129,"relevant":false,"quote":""}
+{"question_id":"q-27cd33425e","document_id":"docker/engine/storage/drivers/device-mapper-driver","char_start":25725,"char_end":26791,"relevant":false,"quote":""}
+{"question_id":"q-27cd33425e","document_id":"docker/engine/storage/drivers/device-mapper-driver","char_start":22222,"char_end":23345,"relevant":false,"quote":""}
+{"question_id":"q-27cd33425e","document_id":"docker/engine/storage/drivers/device-mapper-driver","char_start":23127,"char_end":24172,"relevant":false,"quote":""}
+{"question_id":"q-2bb12e1823","document_id":"postgres-15/logicaldecoding-explanation","char_start":1987,"char_end":3230,"relevant":false,"quote":""}
+{"question_id":"q-2e6b9bf3ad","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-features","char_start":0,"char_end":1359,"relevant":false,"quote":""}
+{"question_id":"q-2e6b9bf3ad","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-features","char_start":7870,"char_end":10027,"relevant":false,"quote":""}
+{"question_id":"q-2e6b9bf3ad","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-observability","char_start":8230,"char_end":9263,"relevant":false,"quote":""}
+{"question_id":"q-2ea3f31c89","document_id":"kubernetes/tutorials/security/seccomp","char_start":19416,"char_end":20420,"relevant":false,"quote":""}
+{"question_id":"q-2ea3f31c89","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-api","char_start":15737,"char_end":16867,"relevant":false,"quote":""}
+{"question_id":"q-2ea3f31c89","document_id":"kubernetes/tasks/debug/debug-application/debug-running-pod","char_start":23017,"char_end":23406,"relevant":false,"quote":""}
+{"question_id":"q-2ea3f31c89","document_id":"kubernetes/tasks/debug/debug-application/debug-running-pod","char_start":25671,"char_end":26536,"relevant":false,"quote":""}
+{"question_id":"q-2ea3f31c89","document_id":"kubernetes/tutorials/security/seccomp","char_start":0,"char_end":1134,"relevant":false,"quote":""}
+{"question_id":"q-313eac79ad","document_id":"kubernetes/concepts/scheduling-eviction/taint-and-toleration","char_start":6196,"char_end":7253,"relevant":true,"quote":"numeric comparison operators\n(`Gt` and `Lt`) to match taints with integer values."}
+{"question_id":"q-313eac79ad","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":30877,"char_end":31087,"relevant":true,"quote":"`Gt` and `Lt` operators will not work with non-integer values."}
+{"question_id":"q-313eac79ad","document_id":"kubernetes/concepts/scheduling-eviction/taint-and-toleration","char_start":8254,"char_end":9438,"relevant":true,"quote":"Both the toleration and taint values must be valid signed 64-bit integers"}
+{"question_id":"q-313eac79ad","document_id":"kubernetes/concepts/security/multi-tenancy","char_start":22240,"char_end":23004,"relevant":false,"quote":""}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/governance/access-controls/local","char_start":12841,"char_end":13366,"relevant":true,"quote":"your organization\nlikely enforces governance, which makes local allow rules inactive."}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/governance/access-controls/organization","char_start":0,"char_end":1344,"relevant":true,"quote":"local `sbx policy` allow rules are no\nlonger evaluated and can't expand what the organization permits."}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/governance/concepts","char_start":182,"char_end":2129,"relevant":true,"quote":"When organization governance is active, only organization allow rules can grant\naccess."}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/governance/concepts","char_start":12677,"char_end":14322,"relevant":true,"quote":"Only organization allow rules grant access, so local and\n  kit-defined allow rules are inactive and can't expand what the organization\n  permits."}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/governance/monitor-and-enforce/monitoring","char_start":3468,"char_end":4818,"relevant":true,"quote":"local and kit-defined allow rules are\nnot evaluated"}
+{"question_id":"q-3726db521a","document_id":"docker/ai/sandboxes/faq","char_start":1490,"char_end":2096,"relevant":true,"quote":"local allow\nrules set with `sbx policy` are no longer evaluated"}
+{"question_id":"q-3acb744830","document_id":"postgres-15/sourcerepo","char_start":0,"char_end":691,"relevant":false,"quote":""}
+{"question_id":"q-3acb744830","document_id":"postgres-16/install-requirements","char_start":0,"char_end":1021,"relevant":false,"quote":""}
+{"question_id":"q-3acb744830","document_id":"postgres-16/install-windows-full","char_start":2806,"char_end":4693,"relevant":true,"quote":"Flex must be version 2.5.35 or later."}
+{"question_id":"q-3acb744830","document_id":"postgres-15/install-requirements","char_start":4209,"char_end":5310,"relevant":false,"quote":""}
+{"question_id":"q-3acb744830","document_id":"postgres-15/install-windows-full","char_start":2937,"char_end":4833,"relevant":false,"quote":""}
+{"question_id":"q-3acb744830","document_id":"postgres-16/sourcerepo","char_start":0,"char_end":683,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/","char_start":0,"char_end":107,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/enterprise/enterprise-deployment","char_start":0,"char_end":557,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/settings-and-maintenance/settings","char_start":643,"char_end":2644,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/setup/install/mac-install","char_start":3723,"char_end":4371,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/engine/cli/proxy","char_start":0,"char_end":1001,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management/configure-admin-console","char_start":0,"char_end":285,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/features/networking/networking-how-tos","char_start":0,"char_end":345,"relevant":false,"quote":""}
+{"question_id":"q-3b10c53119","document_id":"docker/desktop/settings-and-maintenance/settings","char_start":14855,"char_end":15148,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/catalog-pg-statistic","char_start":890,"char_end":2048,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/datatype-numeric","char_start":4011,"char_end":4938,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-15/infoschema-attributes","char_start":0,"char_end":2055,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-16/catalog-pg-statistic","char_start":890,"char_end":2048,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-16/datatype-numeric","char_start":4011,"char_end":4938,"relevant":false,"quote":""}
+{"question_id":"q-3c72e4cc4d","document_id":"postgres-16/infoschema-attributes","char_start":0,"char_end":2055,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-15/app-postgres","char_start":9657,"char_end":10600,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-15/install-procedure","char_start":24153,"char_end":26118,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-16/runtime-config-developer","char_start":15692,"char_end":16761,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-15/app-pg-ctl","char_start":4770,"char_end":5823,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-16/install-make","char_start":23988,"char_end":25953,"relevant":false,"quote":""}
+{"question_id":"q-3ca29e1c7c","document_id":"postgres-16/runtime-config-developer","char_start":5907,"char_end":7693,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":13880,"char_end":14552,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":14221,"char_end":15225,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/kubelet-tls-bootstrapping","char_start":9893,"char_end":10558,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/kubelet-tls-bootstrapping","char_start":10560,"char_end":11757,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/tasks/administer-cluster/certificates","char_start":7682,"char_end":8577,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/tasks/administer-cluster/kubeadm/kubeadm-certs","char_start":2052,"char_end":2666,"relevant":true,"quote":"caCertificateValidityPeriod: 87600h # Default: 365 days × 24 hours * 10 = 10 years"}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/authentication","char_start":7055,"char_end":7614,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":9908,"char_end":10928,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_check-expiration","char_start":0,"char_end":88,"relevant":false,"quote":""}
+{"question_id":"q-3ebdc5b86d","document_id":"kubernetes/reference/setup-tools/kubeadm/implementation-details","char_start":8638,"char_end":9894,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/concepts/scheduling-eviction/scheduler-perf-tuning","char_start":3277,"char_end":4767,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/concepts/storage/dynamic-provisioning","char_start":3179,"char_end":4224,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/reference/access-authn-authz/admission-controllers","char_start":28207,"char_end":29077,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/reference/command-line-tools-reference/kube-proxy","char_start":603,"char_end":2153,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/reference/config-api/kubelet-config.v1beta1","char_start":32691,"char_end":34044,"relevant":false,"quote":""}
+{"question_id":"q-41c27b5fdc","document_id":"kubernetes/tasks/extend-kubernetes/custom-resources/custom-resource-definitions","char_start":37325,"char_end":38313,"relevant":false,"quote":""}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-16/sql-createcollation","char_start":3380,"char_end":4299,"relevant":true,"quote":"CREATE COLLATION german_phonebook (provider = icu, locale = 'de-u-co-phonebk');"}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-15/collation","char_start":5466,"char_end":7016,"relevant":false,"quote":""}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-15/collation","char_start":12586,"char_end":14226,"relevant":true,"quote":"CREATE COLLATION \"de-u-co-phonebk-x-icu\" (provider = icu, locale = 'de-u-co-phonebk');"}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-15/sql-createcollation","char_start":3410,"char_end":3973,"relevant":true,"quote":"CREATE COLLATION german_phonebook (provider = icu, locale = 'de-u-co-phonebk');"}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-16/app-createdb","char_start":609,"char_end":2512,"relevant":false,"quote":""}
+{"question_id":"q-42cd1c45bb","document_id":"postgres-16/locale","char_start":8988,"char_end":9972,"relevant":false,"quote":""}
+{"question_id":"q-4675474a32","document_id":"kubernetes/tasks/extend-kubernetes/configure-aggregation-layer","char_start":2800,"char_end":3873,"relevant":false,"quote":""}
+{"question_id":"q-4675474a32","document_id":"kubernetes/concepts/extend-kubernetes","char_start":8076,"char_end":8499,"relevant":false,"quote":""}
+{"question_id":"q-4675474a32","document_id":"kubernetes/tasks/extend-kubernetes/configure-aggregation-layer","char_start":1924,"char_end":2888,"relevant":false,"quote":""}
+{"question_id":"q-4ba366c50b","document_id":"kubernetes/tasks/configure-pod-container/create-hostprocess-pod","char_start":0,"char_end":1323,"relevant":true,"quote":"While neither filesystem or process\nisolation are supported"}
+{"question_id":"q-4ba366c50b","document_id":"kubernetes/tasks/configure-pod-container/create-hostprocess-pod","char_start":1621,"char_end":2120,"relevant":false,"quote":""}
+{"question_id":"q-4ba366c50b","document_id":"kubernetes/concepts/windows/intro","char_start":1360,"char_end":2155,"relevant":false,"quote":""}
+{"question_id":"q-4e833c21cf","document_id":"docker/engine/storage/drivers/device-mapper-driver","char_start":29260,"char_end":30838,"relevant":false,"quote":""}
+{"question_id":"q-4e833c21cf","document_id":"docker/engine/storage/drivers/select-storage-driver","char_start":7005,"char_end":7768,"relevant":false,"quote":""}
+{"question_id":"q-4e833c21cf","document_id":"docker/engine/storage/drivers/select-storage-driver","char_start":7770,"char_end":8036,"relevant":false,"quote":""}
+{"question_id":"q-4ea0d844bf","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation/enable-eci","char_start":0,"char_end":1155,"relevant":false,"quote":""}
+{"question_id":"q-4ea0d844bf","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation/config","char_start":0,"char_end":1225,"relevant":false,"quote":""}
+{"question_id":"q-4ea0d844bf","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation/enable-eci","char_start":3809,"char_end":4310,"relevant":false,"quote":""}
+{"question_id":"q-4ea0d844bf","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management/configure-json-file","char_start":18789,"char_end":19868,"relevant":true,"quote":"If `value` is set to true, Docker Desktop runs all containers as unprivileged"}
+{"question_id":"q-5255ff1947","document_id":"postgres-15/runtime-config-client","char_start":23943,"char_end":26133,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-15/runtime-config-compatible","char_start":1997,"char_end":3804,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-15/runtime-config-developer","char_start":10246,"char_end":11023,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-16/runtime-config-client","char_start":25289,"char_end":26480,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"kubernetes/reference/command-line-tools-reference/kube-proxy","char_start":17621,"char_end":18382,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-16/runtime-config-compatible","char_start":1997,"char_end":3804,"relevant":false,"quote":""}
+{"question_id":"q-5255ff1947","document_id":"postgres-16/runtime-config-logging","char_start":18355,"char_end":19860,"relevant":false,"quote":""}
+{"question_id":"q-5a5c527994","document_id":"kubernetes/concepts/storage/storage-limits","char_start":2655,"char_end":3729,"relevant":true,"quote":"the `spec.preventPodSchedulingIfMissing` field of the `CSIDriver` object."}
+{"question_id":"q-5a5c527994","document_id":"kubernetes/concepts/storage/storage-limits","char_start":1875,"char_end":2313,"relevant":false,"quote":""}
+{"question_id":"q-5a5c527994","document_id":"kubernetes/concepts/storage/volumes","char_start":37406,"char_end":38581,"relevant":false,"quote":""}
+{"question_id":"q-5a5c527994","document_id":"kubernetes/tasks/administer-cluster/securing-a-cluster","char_start":8653,"char_end":9337,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/concepts/containers/images","char_start":0,"char_end":592,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/concepts/overview/working-with-objects/common-labels","char_start":3279,"char_end":4179,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/reference/glossary/workload","char_start":0,"char_end":359,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/tasks/access-application-cluster/web-ui-dashboard","char_start":3373,"char_end":4430,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/tasks/run-application/run-stateless-application-deployment","char_start":258,"char_end":1208,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/concepts/containers/images","char_start":2178,"char_end":3059,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/concepts/overview/working-with-objects","char_start":3644,"char_end":4562,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/reference/tools","char_start":208,"char_end":419,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/tasks/configure-pod-container/translate-compose-kubernetes","char_start":14039,"char_end":14731,"relevant":false,"quote":""}
+{"question_id":"q-62d4fadc33","document_id":"kubernetes/tutorials/hello-minikube","char_start":2860,"char_end":4689,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/build/buildkit/frontend","char_start":1651,"char_end":2630,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/desktop/previous-versions/archive-windows","char_start":16194,"char_end":16302,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/dhi/explore/build-process","char_start":1654,"char_end":2641,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/dhi/explore/responsibility","char_start":2827,"char_end":3174,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/desktop/features/desktop-cli","char_start":592,"char_end":1458,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/desktop/previous-versions/archive-mac","char_start":17997,"char_end":18117,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/desktop/previous-versions/edge-releases-windows","char_start":77006,"char_end":77831,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/desktop/troubleshoot-and-support/faqs/releases","char_start":0,"char_end":1238,"relevant":false,"quote":""}
+{"question_id":"q-6339a032da","document_id":"docker/engine/install/binaries","char_start":0,"char_end":1792,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/desktop/settings-and-maintenance/settings","char_start":5059,"char_end":5969,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/desktop/setup/install/linux/archlinux","char_start":364,"char_end":468,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/desktop/features/wsl","char_start":705,"char_end":1468,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/desktop/setup/install/mac-install","char_start":1503,"char_end":1910,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/engine/containers/resource_constraints","char_start":0,"char_end":839,"relevant":false,"quote":""}
+{"question_id":"q-640e514478","document_id":"docker/engine/containers/resource_constraints","char_start":3111,"char_end":4759,"relevant":false,"quote":""}
+{"question_id":"q-643d182228","document_id":"kubernetes/concepts/storage/persistent-volumes","char_start":22934,"char_end":24048,"relevant":false,"quote":""}
+{"question_id":"q-643d182228","document_id":"kubernetes/concepts/storage/persistent-volumes","char_start":25203,"char_end":26108,"relevant":false,"quote":""}
+{"question_id":"q-643d182228","document_id":"kubernetes/concepts/storage/volumes","char_start":41031,"char_end":42168,"relevant":false,"quote":""}
+{"question_id":"q-643d182228","document_id":"kubernetes/concepts/storage/volumes","char_start":1910,"char_end":3591,"relevant":false,"quote":""}
+{"question_id":"q-64b1617e5f","document_id":"kubernetes/concepts/scheduling-eviction/taint-and-toleration","char_start":6196,"char_end":7253,"relevant":true,"quote":"`Gt` matches when the taint value is greater than the toleration value."}
+{"question_id":"q-64b1617e5f","document_id":"kubernetes/concepts/extend-kubernetes/operator","char_start":0,"char_end":212,"relevant":false,"quote":""}
+{"question_id":"q-64b1617e5f","document_id":"kubernetes/concepts/scheduling-eviction/taint-and-toleration","char_start":7394,"char_end":8252,"relevant":true,"quote":"This toleration matches the taint on `node1` because `950 > 900` (the taint value\nis greater than the toleration value for the `Gt` operator)."}
+{"question_id":"q-64b1617e5f","document_id":"kubernetes/concepts/scheduling-eviction/taint-and-toleration","char_start":8254,"char_end":9438,"relevant":true,"quote":"Both the toleration and taint values must be valid signed 64-bit integers"}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-15/datatype-datetime","char_start":24051,"char_end":24598,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-15/infoschema-attributes","char_start":1880,"char_end":4011,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-15/app-pgresetwal","char_start":6535,"char_end":7926,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-15/backup-manifest-wal-ranges","char_start":0,"char_end":971,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-16/continuous-archiving","char_start":32212,"char_end":33350,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-16/datatype-datetime","char_start":24051,"char_end":24598,"relevant":false,"quote":""}
+{"question_id":"q-6a8cb4b682","document_id":"postgres-16/infoschema-attributes","char_start":1880,"char_end":4011,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-15/explicit-locking","char_start":4496,"char_end":5554,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-15/explicit-locking","char_start":13421,"char_end":15624,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-15/sql-cluster","char_start":264,"char_end":1826,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-15/sql-lock","char_start":290,"char_end":2378,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-16/explicit-locking","char_start":4496,"char_end":5554,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-16/explicit-locking","char_start":13421,"char_end":15624,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-16/sql-cluster","char_start":264,"char_end":1827,"relevant":false,"quote":""}
+{"question_id":"q-6b34bbfe74","document_id":"postgres-16/sql-lock","char_start":290,"char_end":2378,"relevant":false,"quote":""}
+{"question_id":"q-6d485a90d2","document_id":"postgres-15/extend-type-system","char_start":0,"char_end":134,"relevant":false,"quote":""}
+{"question_id":"q-6d485a90d2","document_id":"postgres-15/infoschema-columns","char_start":7322,"char_end":8828,"relevant":true,"quote":"Since PostgreSQL treats built-in types like user-defined types, built-in types appear here as well."}
+{"question_id":"q-6d485a90d2","document_id":"postgres-15/infoschema-user-defined-types","char_start":0,"char_end":1003,"relevant":false,"quote":""}
+{"question_id":"q-6d485a90d2","document_id":"postgres-16/extend-type-system","char_start":0,"char_end":134,"relevant":false,"quote":""}
+{"question_id":"q-6d485a90d2","document_id":"postgres-16/infoschema-columns","char_start":7322,"char_end":8828,"relevant":true,"quote":"Since PostgreSQL treats built-in types like user-defined types, built-in types appear here as well."}
+{"question_id":"q-6d485a90d2","document_id":"postgres-16/infoschema-user-defined-types","char_start":0,"char_end":1003,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/kernel-resources","char_start":17058,"char_end":19128,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/release-15-2","char_start":12550,"char_end":14474,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/sql-createcollation","char_start":615,"char_end":2789,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/typeconv-oper","char_start":5647,"char_end":6642,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-15/tutorial-createdb","char_start":1487,"char_end":3568,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-16/kernel-resources","char_start":16832,"char_end":18902,"relevant":false,"quote":""}
+{"question_id":"q-716ec9e8ad","document_id":"postgres-16/typeconv-oper","char_start":5647,"char_end":6642,"relevant":false,"quote":""}
+{"question_id":"q-7249424ba7","document_id":"docker/compose/how-tos/environment-variables/set-environment-variables","char_start":432,"char_end":862,"relevant":false,"quote":""}
+{"question_id":"q-7249424ba7","document_id":"docker/engine/cli/proxy","char_start":0,"char_end":1001,"relevant":false,"quote":""}
+{"question_id":"q-7249424ba7","document_id":"kubernetes/tasks/inject-data-application/define-environment-variable-container","char_start":0,"char_end":1137,"relevant":false,"quote":""}
+{"question_id":"q-7249424ba7","document_id":"kubernetes/tasks/inject-data-application/define-environment-variable-via-file","char_start":0,"char_end":180,"relevant":false,"quote":""}
+{"question_id":"q-7249424ba7","document_id":"kubernetes/tasks/inject-data-application/distribute-credentials-secure","char_start":8842,"char_end":9736,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/concepts/security/hardening-guide/authentication-mechanisms","char_start":1179,"char_end":2624,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/access-authn-authz/authentication","char_start":7055,"char_end":7614,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":9304,"char_end":10349,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":13079,"char_end":14924,"relevant":true,"quote":"Permitted key usages - [\"key encipherment\", \"digital signature\", \"server auth\"]"}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/setup/best-practices/certificates","char_start":418,"char_end":517,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":5828,"char_end":6828,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/access-authn-authz/certificate-signing-requests","char_start":9908,"char_end":10928,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/reference/setup-tools/kubeadm/implementation-details","char_start":2535,"char_end":3128,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/setup/best-practices/certificates","char_start":0,"char_end":416,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/setup/best-practices/certificates","char_start":754,"char_end":1379,"relevant":false,"quote":""}
+{"question_id":"q-72dab98e56","document_id":"kubernetes/setup/best-practices/certificates","char_start":3922,"char_end":5233,"relevant":false,"quote":""}
+{"question_id":"q-751be7b68d","document_id":"postgres-15/functions-matching","char_start":23352,"char_end":24299,"relevant":false,"quote":""}
+{"question_id":"q-751be7b68d","document_id":"postgres-16/functions-matching","char_start":23352,"char_end":24299,"relevant":false,"quote":""}
+{"question_id":"q-808c8481c2","document_id":"postgres-16/ddl-generated-columns","char_start":3067,"char_end":4418,"relevant":true,"quote":"its `GENERATED` clause will automatically be copied from the parent."}
+{"question_id":"q-808c8481c2","document_id":"postgres-15/ddl-generated-columns","char_start":2368,"char_end":3553,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-15/functions-math","char_start":0,"char_end":890,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-15/plpython-data","char_start":197,"char_end":2017,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-15/xaggr","char_start":2694,"char_end":3829,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-16/functions-math","char_start":0,"char_end":890,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-16/plpython-data","char_start":197,"char_end":2017,"relevant":false,"quote":""}
+{"question_id":"q-82b032abac","document_id":"postgres-16/xaggr","char_start":2694,"char_end":3829,"relevant":false,"quote":""}
+{"question_id":"q-830fb5dd76","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_join","char_start":2358,"char_end":3516,"relevant":false,"quote":""}
+{"question_id":"q-830fb5dd76","document_id":"kubernetes/concepts/cluster-administration/compatibility-version","char_start":0,"char_end":321,"relevant":false,"quote":""}
+{"question_id":"q-830fb5dd76","document_id":"kubernetes/concepts/workloads/pods/static-pods","char_start":1678,"char_end":2412,"relevant":false,"quote":""}
+{"question_id":"q-830fb5dd76","document_id":"kubernetes/reference/setup-tools/kubeadm/kubeadm-init-phase","char_start":1404,"char_end":1539,"relevant":false,"quote":""}
+{"question_id":"q-858a88dba0","document_id":"postgres-15/plpgsql-errors-and-messages","char_start":3467,"char_end":4080,"relevant":false,"quote":""}
+{"question_id":"q-858a88dba0","document_id":"postgres-16/plpgsql-errors-and-messages","char_start":3467,"char_end":4080,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-15/predefined-roles","char_start":0,"char_end":649,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-16/release-16","char_start":46,"char_end":734,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-16/sql-createrole","char_start":2541,"char_end":3735,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-15/sql-createrole","char_start":638,"char_end":1167,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-15/user-manag","char_start":0,"char_end":939,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-16/app-createuser","char_start":971,"char_end":1943,"relevant":true,"quote":"Specifies an existing role that will be automatically added as a member of the new role with admin option, giving it the right to grant membership in the new role to others."}
+{"question_id":"q-859a347756","document_id":"postgres-16/sql-createrole","char_start":7967,"char_end":10070,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-16/sql-grant","char_start":6503,"char_end":8469,"relevant":false,"quote":""}
+{"question_id":"q-859a347756","document_id":"postgres-16/sql-revoke","char_start":4996,"char_end":6186,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/datatype","char_start":2838,"char_end":3648,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/extend-how","char_start":0,"char_end":1514,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/extend-type-system","char_start":0,"char_end":134,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/sql-keywords-appendix","char_start":0,"char_end":1196,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/xml-limits-conformance","char_start":0,"char_end":925,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-15/xml-limits-conformance","char_start":5634,"char_end":6647,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-16/datatype","char_start":2838,"char_end":3648,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-16/datatype-character","char_start":1277,"char_end":1969,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-16/extend-how","char_start":0,"char_end":1514,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-16/extend-type-system","char_start":0,"char_end":134,"relevant":false,"quote":""}
+{"question_id":"q-8bbe1db16a","document_id":"postgres-16/sql-keywords-appendix","char_start":0,"char_end":1196,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/app-pgrestore","char_start":2636,"char_end":3622,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/app-pgrestore","char_start":9317,"char_end":11383,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/sql-createfunction","char_start":22252,"char_end":23377,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/sql-grant","char_start":11308,"char_end":12984,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-16/app-pgdump","char_start":4058,"char_end":5812,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/release-15","char_start":15087,"char_end":16256,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-15/sql-grant","char_start":4946,"char_end":6052,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-16/app-pgrestore","char_start":2636,"char_end":3622,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-16/app-pgrestore","char_start":9317,"char_end":11383,"relevant":false,"quote":""}
+{"question_id":"q-8c2343ca50","document_id":"postgres-16/sql-grant","char_start":13646,"char_end":15322,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-15/ecpg-informix-compat","char_start":19760,"char_end":20641,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-15/ecpg-informix-compat","char_start":20398,"char_end":22040,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-15/ecpg-pgtypes","char_start":15991,"char_end":17303,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-15/ecpg-pgtypes","char_start":7841,"char_end":8962,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-16/ecpg-informix-compat","char_start":19760,"char_end":20641,"relevant":false,"quote":""}
+{"question_id":"q-9547eb4f9c","document_id":"postgres-16/ecpg-informix-compat","char_start":20398,"char_end":22040,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/dhi/explore/security-concepts/cves","char_start":555,"char_end":1156,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/scout/explore/analysis","char_start":5359,"char_end":6878,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/dhi/explore/scanner-integrations","char_start":6990,"char_end":7723,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/dhi/tools/api","char_start":2573,"char_end":3870,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/scout/explore/dashboard","char_start":399,"char_end":1388,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/scout/explore/dashboard","char_start":2423,"char_end":3202,"relevant":false,"quote":""}
+{"question_id":"q-99094d784f","document_id":"docker/scout/policy/local","char_start":7420,"char_end":8243,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi","char_start":0,"char_end":1328,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi/explore","char_start":0,"char_end":522,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi/explore/build-process","char_start":0,"char_end":641,"relevant":true,"quote":"Docker Hardened Images are built through an automated pipeline that monitors\nupstream sources, applies security updates, and publishes signed artifacts."}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi/how-to/helm","char_start":0,"char_end":1301,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi/how-to/search-evaluate","char_start":867,"char_end":1921,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/dhi/explore/available","char_start":0,"char_end":330,"relevant":false,"quote":""}
+{"question_id":"q-9c86a65605","document_id":"docker/docker-hub/image-library/trusted-content","char_start":6566,"char_end":7398,"relevant":false,"quote":""}
+{"question_id":"q-9ec57f3662","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation","char_start":0,"char_end":1333,"relevant":false,"quote":""}
+{"question_id":"q-9ec57f3662","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation","char_start":1099,"char_end":2192,"relevant":true,"quote":"With Enhanced Container Isolation, all containers leverage Linux user namespaces for stronger isolation."}
+{"question_id":"q-9ec57f3662","document_id":"kubernetes/concepts/security/pod-security-standards","char_start":14860,"char_end":15083,"relevant":false,"quote":""}
+{"question_id":"q-9ec57f3662","document_id":"kubernetes/concepts/workloads/pods/user-namespaces","char_start":0,"char_end":787,"relevant":true,"quote":"A user\nnamespace isolates the user running inside the container from the one\nin the host."}
+{"question_id":"q-9ec57f3662","document_id":"kubernetes/tasks/configure-pod-container/user-namespaces","char_start":0,"char_end":1077,"relevant":true,"quote":"This allows you to\nisolate the user running inside the container from the one in the host."}
+{"question_id":"q-a007b1da59","document_id":"docker/desktop/enterprise/hardened-desktop/air-gapped-containers","char_start":7910,"char_end":8087,"relevant":false,"quote":""}
+{"question_id":"q-a007b1da59","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation","char_start":4517,"char_end":5757,"relevant":true,"quote":"Enhanced Container Isolation prevents containers from sharing Linux namespaces with the Docker Desktop VM, maintaining isolation boundaries:"}
+{"question_id":"q-a007b1da59","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation","char_start":9094,"char_end":10014,"relevant":false,"quote":""}
+{"question_id":"q-a007b1da59","document_id":"docker/desktop/enterprise/hardened-desktop/enhanced-container-isolation/limitations","char_start":3069,"char_end":3413,"relevant":true,"quote":"each Kubernetes node runs in an ECI-protected container, providing stronger isolation from the Docker Desktop VM."}
+{"question_id":"q-a007b1da59","document_id":"docker/desktop/features/networking","char_start":0,"char_end":1169,"relevant":true,"quote":"Docker Desktop runs the Docker Engine inside a lightweight Linux virtual machine (VM)."}
+{"question_id":"q-a007b1da59","document_id":"docker/faqs/platform","char_start":5525,"char_end":6068,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/integrations/ci/jenkins","char_start":0,"char_end":1037,"relevant":true,"quote":"The pipeline needs a `DOCKER_HUB`\ncredential containing the username and password for authenticating to Docker\nHub."}
+{"question_id":"q-a1551114c1","document_id":"docker/dhi/how-to/policies","char_start":2677,"char_end":2942,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/install","char_start":2701,"char_end":3596,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/integrations/ci","char_start":0,"char_end":519,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/integrations/ci/azure","char_start":0,"char_end":2109,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/integrations/ci/gitlab","char_start":415,"char_end":1502,"relevant":false,"quote":""}
+{"question_id":"q-a1551114c1","document_id":"docker/scout/integrations/registry","char_start":1044,"char_end":1786,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"docker/desktop/troubleshoot-and-support/troubleshoot/topics","char_start":13792,"char_end":13895,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"docker/engine/daemon","char_start":689,"char_end":1462,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"docker/compose/how-tos/environment-variables/best-practices","char_start":248,"char_end":444,"relevant":false,"quote":""}
+{"question_id":"q-a4798da7f8","document_id":"docker/engine/daemon","char_start":247,"char_end":687,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes-api/cookbook/handle-errors-and-degradation","char_start":330,"char_end":2203,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes-api/cookbook/retry-without-creating-duplicates","char_start":1571,"char_end":2563,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes-api/cookbook/work-within-the-limits","char_start":2709,"char_end":3317,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes/governance/audit/api","char_start":5018,"char_end":6100,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes/troubleshooting","char_start":18836,"char_end":19328,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes-api/cookbook/retry-without-creating-duplicates","char_start":0,"char_end":1192,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/ai/sandboxes-api/cookbook/retry-without-creating-duplicates","char_start":2566,"char_end":3392,"relevant":false,"quote":""}
+{"question_id":"q-a4d5597902","document_id":"docker/engine/swarm/services","char_start":31912,"char_end":33749,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/workloads/controllers/job","char_start":13125,"char_end":13910,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/workloads/pods","char_start":6720,"char_end":8906,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/workloads/workload-api","char_start":0,"char_end":1074,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/how-dra-works","char_start":978,"char_end":2180,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/workloads","char_start":0,"char_end":1019,"relevant":false,"quote":""}
+{"question_id":"q-a6cf5e81d1","document_id":"kubernetes/concepts/workloads/controllers","char_start":0,"char_end":1596,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-15/ddl-default","char_start":0,"char_end":1607,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-15/sql-altersystem","char_start":1416,"char_end":2117,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-15/rowtypes","char_start":13809,"char_end":15009,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-15/sql-copy","char_start":11325,"char_end":12307,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-16/ddl-default","char_start":0,"char_end":1607,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-16/file-fdw","char_start":0,"char_end":1966,"relevant":false,"quote":""}
+{"question_id":"q-a8e7e49638","document_id":"postgres-16/sql-altersystem","char_start":1416,"char_end":2117,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-api","char_start":2009,"char_end":3198,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-features","char_start":213,"char_end":1374,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-features","char_start":8156,"char_end":9350,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-observability","char_start":8230,"char_end":10428,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/concepts/resource-management/dynamic-resource-allocation/dra-api","char_start":2793,"char_end":4676,"relevant":false,"quote":""}
+{"question_id":"q-ade99c6294","document_id":"kubernetes/reference/node/dra-standard-device-attributes","char_start":2248,"char_end":2576,"relevant":false,"quote":""}
+{"question_id":"q-b550882cce","document_id":"docker/engine/storage/drivers/aufs-driver","char_start":8664,"char_end":9281,"relevant":false,"quote":""}
+{"question_id":"q-b550882cce","document_id":"docker/engine/storage/drivers/select-storage-driver","char_start":6194,"char_end":7003,"relevant":false,"quote":""}
+{"question_id":"q-b550882cce","document_id":"docker/engine/storage/drivers/select-storage-driver","char_start":7005,"char_end":7768,"relevant":false,"quote":""}
+{"question_id":"q-b550882cce","document_id":"docker/engine/storage/drivers/select-storage-driver","char_start":7770,"char_end":8036,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":11675,"char_end":12091,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":12519,"char_end":13371,"relevant":true,"quote":"The default value is Always."}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":17702,"char_end":19380,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/tasks/configure-pod-container/resize-pod-resources","char_start":1760,"char_end":3000,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/tutorials/stateful-application/zookeeper","char_start":29109,"char_end":29868,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":0,"char_end":1203,"relevant":false,"quote":""}
+{"question_id":"q-b8b2d35739","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":20767,"char_end":21853,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"kubernetes/concepts/cluster-administration/system-logs","char_start":4088,"char_end":5145,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"kubernetes/concepts/overview/kubernetes-api","char_start":8773,"char_end":10149,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"kubernetes/tutorials/cluster-management/namespaces-walkthrough","char_start":0,"char_end":398,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"kubernetes/concepts/architecture","char_start":5277,"char_end":5541,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"postgres-15/locale","char_start":9407,"char_end":10891,"relevant":false,"quote":""}
+{"question_id":"q-b8b4043e1e","document_id":"postgres-16/locale","char_start":13592,"char_end":14619,"relevant":false,"quote":""}
+{"question_id":"q-b9a98b2696","document_id":"docker/dhi/explore/security-concepts/ssdlc","char_start":0,"char_end":614,"relevant":false,"quote":""}
+{"question_id":"q-b9a98b2696","document_id":"docker/dhi/explore/security-concepts/ssdlc","char_start":1212,"char_end":1480,"relevant":true,"quote":"With Docker Hardened\nImages (DHIs), Docker\nDebug, and Docker\nScout, teams can add security without losing\nvelocity."}
+{"question_id":"q-b9a98b2696","document_id":"docker/dhi/explore/security-concepts/ssdlc","char_start":3894,"char_end":4238,"relevant":true,"quote":"it easier to adopt compliance and supply chain security across your software\ndelivery lifecycle."}
+{"question_id":"q-b9a98b2696","document_id":"docker/docker-hub/image-library/search","char_start":1063,"char_end":2392,"relevant":false,"quote":""}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-15/ddl-alter","char_start":0,"char_end":907,"relevant":true,"quote":"Rename tables"}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-15/upgrading","char_start":5603,"char_end":6554,"relevant":false,"quote":""}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-16/ddl-alter","char_start":0,"char_end":907,"relevant":true,"quote":"Rename tables"}
+{"question_id":"q-bbdf4963ba","document_id":"postgres-16/upgrading","char_start":5603,"char_end":6558,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-15/datatype","char_start":2838,"char_end":3648,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-15/datatype-numeric","char_start":12174,"char_end":12904,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-15/functions-aggregate","char_start":6189,"char_end":8358,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-15/plpython-data","char_start":1197,"char_end":2165,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-16/datatype-numeric","char_start":12174,"char_end":12904,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-16/functions-aggregate","char_start":8845,"char_end":11014,"relevant":false,"quote":""}
+{"question_id":"q-c1612a693d","document_id":"postgres-16/plpython-data","char_start":1197,"char_end":2165,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-15/routine-vacuuming","char_start":819,"char_end":2353,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-15/runtime-config-autovacuum","char_start":1832,"char_end":3547,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-15/runtime-config-resource","char_start":8458,"char_end":9269,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-15/sql-vacuum","char_start":4689,"char_end":6702,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-16/routine-vacuuming","char_start":819,"char_end":2353,"relevant":false,"quote":""}
+{"question_id":"q-c4bac73c18","document_id":"postgres-16/sql-vacuum","char_start":8739,"char_end":10884,"relevant":false,"quote":""}
+{"question_id":"q-c598648ce8","document_id":"kubernetes/concepts/configuration/manage-resources-containers","char_start":10191,"char_end":10895,"relevant":false,"quote":""}
+{"question_id":"q-c598648ce8","document_id":"kubernetes/concepts/workloads/pods/pod-qos","char_start":0,"char_end":1149,"relevant":false,"quote":""}
+{"question_id":"q-c598648ce8","document_id":"kubernetes/tutorials/cluster-management/install-use-dra","char_start":0,"char_end":1136,"relevant":false,"quote":""}
+{"question_id":"q-c598648ce8","document_id":"kubernetes/concepts/workloads/pods/advanced-pod-config","char_start":4699,"char_end":4828,"relevant":false,"quote":""}
+{"question_id":"q-c598648ce8","document_id":"kubernetes/reference/command-line-tools-reference/kube-scheduler","char_start":0,"char_end":562,"relevant":false,"quote":""}
+{"question_id":"q-c7737e222b","document_id":"docker/docker-hub/repos/manage/vulnerability-scanning","char_start":5269,"char_end":6049,"relevant":true,"quote":"Specify an updated base image in the Dockerfile"}
+{"question_id":"q-c7737e222b","document_id":"docker/scout/quickstart","char_start":5973,"char_end":7789,"relevant":true,"quote":"edit the Dockerfile by adding a `USER`\ninstruction, specifying a non-root user:"}
+{"question_id":"q-c7737e222b","document_id":"kubernetes/concepts/configuration/secret","char_start":0,"char_end":1637,"relevant":false,"quote":""}
+{"question_id":"q-c7737e222b","document_id":"kubernetes/concepts/security/application-security-checklist","char_start":3716,"char_end":3956,"relevant":true,"quote":"Using an image scanning tool to scan an image before deploying containers in the Kubernetes cluster."}
+{"question_id":"q-c7737e222b","document_id":"docker/dhi/explore/security-concepts/ssdlc","char_start":3528,"char_end":3892,"relevant":true,"quote":"Get CVE remediation guidance and patch visibility using Docker Scout"}
+{"question_id":"q-c7737e222b","document_id":"docker/docker-hub/repos/manage/vulnerability-scanning","char_start":1448,"char_end":2085,"relevant":true,"quote":"A recommended fixed version, if available"}
+{"question_id":"q-c7737e222b","document_id":"docker/docker-hub/repos/manage/vulnerability-scanning","char_start":3779,"char_end":3922,"relevant":false,"quote":""}
+{"question_id":"q-c7737e222b","document_id":"kubernetes/concepts/security/pod-security-standards","char_start":15469,"char_end":16693,"relevant":false,"quote":""}
+{"question_id":"q-c7737e222b","document_id":"kubernetes/tutorials/security/seccomp","char_start":4761,"char_end":6658,"relevant":false,"quote":""}
+{"question_id":"q-c8fb7dcd8d","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":9748,"char_end":10823,"relevant":false,"quote":""}
+{"question_id":"q-c8fb7dcd8d","document_id":"kubernetes/concepts/workloads/controllers/daemonset","char_start":5260,"char_end":5922,"relevant":false,"quote":""}
+{"question_id":"q-c8fb7dcd8d","document_id":"kubernetes/reference/glossary/affinity","char_start":0,"char_end":384,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/functions-net","char_start":2461,"char_end":3931,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/functions-net","char_start":4662,"char_end":5501,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/jit-extensibility","char_start":764,"char_end":878,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/libpq-connect","char_start":22157,"char_end":23416,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-15/sql-values","char_start":3713,"char_end":4542,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-16/functions-net","char_start":2461,"char_end":3931,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-16/functions-net","char_start":4662,"char_end":5501,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-16/jit-extensibility","char_start":764,"char_end":878,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-16/libpq-connect","char_start":22157,"char_end":23416,"relevant":false,"quote":""}
+{"question_id":"q-ca0334d690","document_id":"postgres-16/sql-values","char_start":3713,"char_end":4542,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":0,"char_end":1001,"relevant":true,"quote":"the\nscheduler will automatically do a reasonable placement\n(for example, spreading your Pods across nodes so as not place Pods on a node with insufficient free resources)."}
+{"question_id":"q-cda082a266","document_id":"kubernetes/concepts/scheduling-eviction/assign-pod-node","char_start":15150,"char_end":16157,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/setup/best-practices/multiple-zones","char_start":2983,"char_end":3174,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/tasks/administer-cluster/securing-a-cluster","char_start":8653,"char_end":9337,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/concepts/workloads/pods/advanced-pod-config","char_start":5036,"char_end":5764,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":966,"char_end":2128,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/concepts/workloads/pods/pod-lifecycle","char_start":2352,"char_end":3606,"relevant":false,"quote":""}
+{"question_id":"q-cda082a266","document_id":"kubernetes/setup/best-practices/multiple-zones","char_start":1488,"char_end":2567,"relevant":true,"quote":"use node labels\nin conjunction with\nPod topology spread constraints\nto control how Pods are spread across your cluster among fault domains:\nregions, zones, and even specific nodes."}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/concepts/services-networking/service","char_start":18919,"char_end":20087,"relevant":true,"quote":"default: 30000-32767"}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/reference/networking/ports-and-protocols","char_start":815,"char_end":1579,"relevant":true,"quote":"30000-32767 | NodePort Services"}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/tutorials/kubernetes-basics/expose/expose-intro","char_start":4634,"char_end":5580,"relevant":false,"quote":""}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/concepts/services-networking/service","char_start":18227,"char_end":19206,"relevant":true,"quote":"default: 30000-32767"}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/tutorials/services/connect-applications-service","char_start":16021,"char_end":17656,"relevant":false,"quote":""}
+{"question_id":"q-cdcb35a40b","document_id":"kubernetes/tutorials/services/source-ip","char_start":4226,"char_end":5642,"relevant":false,"quote":""}
+{"question_id":"q-d0696f0dda","document_id":"docker/compose/install","char_start":0,"char_end":1139,"relevant":false,"quote":""}
+{"question_id":"q-d0696f0dda","document_id":"docker/engine/install/debian","char_start":2450,"char_end":2880,"relevant":true,"quote":"Set up and install Docker Engine from\n  Docker's `apt` repository."}
+{"question_id":"q-d0696f0dda","document_id":"docker/engine/install/raspberry-pi-os","char_start":3744,"char_end":4174,"relevant":true,"quote":"Set up and install Docker Engine from\n  Docker's `apt` repository."}
+{"question_id":"q-d0f7657576","document_id":"postgres-15/jit-extensibility","char_start":754,"char_end":1741,"relevant":false,"quote":""}
+{"question_id":"q-d0f7657576","document_id":"postgres-16/jit-extensibility","char_start":754,"char_end":1741,"relevant":false,"quote":""}
+{"question_id":"q-d839570993","document_id":"docker/compose/how-tos/networking","char_start":4534,"char_end":5753,"relevant":false,"quote":""}
+{"question_id":"q-d839570993","document_id":"docker/desktop/previous-versions/edge-releases-windows","char_start":76784,"char_end":77004,"relevant":false,"quote":""}
+{"question_id":"q-d839570993","document_id":"docker/docker-hub/troubleshoot","char_start":1562,"char_end":1631,"relevant":false,"quote":""}
+{"question_id":"q-d839570993","document_id":"docker/engine/network/drivers","char_start":0,"char_end":1834,"relevant":false,"quote":""}
+{"question_id":"q-d839570993","document_id":"docker/engine/network/drivers/overlay","char_start":14265,"char_end":14431,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"docker/engine/swarm/how-swarm-mode-works/services","char_start":0,"char_end":819,"relevant":true,"quote":"An overlay network for the service to connect to other services in the swarm"}
+{"question_id":"q-d8f25fc1e2","document_id":"docker/engine/swarm/key-concepts","char_start":154,"char_end":2126,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"kubernetes/concepts/cluster-administration","char_start":2740,"char_end":3087,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"kubernetes/tasks/job/job-with-pod-to-pod-communication","char_start":1174,"char_end":1931,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"docker/engine/swarm/networking","char_start":2080,"char_end":2473,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"docker/engine/swarm/services","char_start":0,"char_end":826,"relevant":false,"quote":""}
+{"question_id":"q-d8f25fc1e2","document_id":"kubernetes/concepts/architecture/control-plane-node-communication","char_start":3787,"char_end":4945,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/setup/production-environment/tools/kubeadm/create-cluster-kubeadm","char_start":891,"char_end":1935,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/configure-pod-container/assign-resources/set-up-dra-cluster","char_start":0,"char_end":264,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/extend-kubernetes/custom-resources/custom-resource-definitions","char_start":174,"char_end":361,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/tls/certificate-rotation","char_start":0,"char_end":1150,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_addon_coredns","char_start":145,"char_end":1483,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/setup/production-environment/tools/kubeadm/kubelet-integration","char_start":0,"char_end":1125,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/access-application-cluster/configure-dns-cluster","char_start":0,"char_end":341,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/debug/debug-application/debug-statefulset","char_start":72,"char_end":290,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tasks/extend-kubernetes/socks5-proxy-access-api","char_start":0,"char_end":292,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tutorials/security/cluster-level-pss","char_start":0,"char_end":1207,"relevant":false,"quote":""}
+{"question_id":"q-ddce5171b8","document_id":"kubernetes/tutorials/security/seccomp","char_start":5444,"char_end":6352,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-15/earthdistance","char_start":924,"char_end":2128,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-15/functions-geometry","char_start":8117,"char_end":9478,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-15/functions-geometry","char_start":12529,"char_end":13345,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-16/earthdistance","char_start":928,"char_end":2130,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-16/functions-geometry","char_start":8117,"char_end":9478,"relevant":false,"quote":""}
+{"question_id":"q-e0191dc89d","document_id":"postgres-16/functions-geometry","char_start":12529,"char_end":13345,"relevant":false,"quote":""}
+{"question_id":"q-e55709b732","document_id":"postgres-15/btree-implementation","char_start":0,"char_end":1109,"relevant":false,"quote":""}
+{"question_id":"q-e55709b732","document_id":"postgres-16/btree-implementation","char_start":0,"char_end":1109,"relevant":false,"quote":""}
+{"question_id":"q-e70f9f4e67","document_id":"kubernetes/reference/command-line-tools-reference/feature-gates/NodeDeclaredFeatures","char_start":0,"char_end":236,"relevant":true,"quote":"This enables the\nscheduler and admission controller to prevent operations on nodes lacking features\nrequired by the Pod."}
+{"question_id":"q-e70f9f4e67","document_id":"kubernetes/reference/access-authn-authz/admission-controllers","char_start":21700,"char_end":22834,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"docker/desktop/previous-versions/edge-releases-mac","char_start":24197,"char_end":25235,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"docker/docker-hub/repos/manage/trusted-content/insights-analytics","char_start":6044,"char_end":7388,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"kubernetes/concepts/overview/components","char_start":1653,"char_end":2037,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"kubernetes/concepts/overview/kubernetes-api","char_start":8773,"char_end":10149,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"docker/compose/gettingstarted","char_start":2356,"char_end":3466,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"docker/desktop/previous-versions/edge-releases-windows","char_start":35961,"char_end":37143,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"docker/docker-hub/image-library/search","char_start":3249,"char_end":4244,"relevant":true,"quote":"- Configuration templating: Customize deployments with values files, making it\n  easy to deploy the same application across different environments."}
+{"question_id":"q-e7f159b53b","document_id":"kubernetes/concepts/configuration","char_start":694,"char_end":1471,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"kubernetes/concepts/overview/kubernetes-api","char_start":10151,"char_end":11941,"relevant":false,"quote":""}
+{"question_id":"q-e7f159b53b","document_id":"kubernetes/concepts/overview/working-with-objects/namespaces","char_start":397,"char_end":1363,"relevant":false,"quote":""}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/concepts/architecture/mixed-version-proxy","char_start":0,"char_end":1240,"relevant":false,"quote":""}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/concepts/extend-kubernetes/api-extension/custom-resources","char_start":6101,"char_end":7288,"relevant":true,"quote":"CRDs are simple and can be created without any programming."}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/concepts/overview/kubernetes-api","char_start":8773,"char_end":10149,"relevant":false,"quote":""}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/concepts/overview/kubernetes-api","char_start":11943,"char_end":12211,"relevant":false,"quote":""}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/concepts/extend-kubernetes","char_start":4259,"char_end":6080,"relevant":false,"quote":""}
+{"question_id":"q-eb45502b62","document_id":"kubernetes/reference/using-api/api-concepts","char_start":826,"char_end":1901,"relevant":false,"quote":""}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/concepts/services-networking/cluster-ip-allocation","char_start":0,"char_end":1187,"relevant":true,"quote":"the cluster's control plane automatically picks a free IP address from within the configured IP range for `type: ClusterIP` Services."}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/concepts/services-networking/service","char_start":4467,"char_end":5053,"relevant":false,"quote":""}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/concepts/services-networking/service","char_start":37777,"char_end":37939,"relevant":false,"quote":""}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/reference/networking/virtual-ips","char_start":24986,"char_end":25982,"relevant":true,"quote":"Kubernetes prefers to allocate dynamic IP addresses to Services by choosing from the upper band"}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/concepts/cluster-administration/networking","char_start":1222,"char_end":1661,"relevant":false,"quote":""}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/concepts/services-networking/service","char_start":15947,"char_end":16343,"relevant":true,"quote":"This default Service type assigns an IP address from a pool of IP addresses that\nyour cluster has reserved for that purpose."}
+{"question_id":"q-ebb2345528","document_id":"kubernetes/tasks/network/validate-dual-stack","char_start":3085,"char_end":4751,"relevant":true,"quote":"Kubernetes will assign a cluster IP for the Service from the first configured\n`service-cluster-ip-range`"}
+{"question_id":"q-ee078af201","document_id":"postgres-15/history","char_start":0,"char_end":315,"relevant":false,"quote":""}
+{"question_id":"q-ee078af201","document_id":"postgres-15/infoschema-collation-character-set-applicab","char_start":0,"char_end":999,"relevant":true,"quote":"Character sets are currently not implemented as schema objects, so this column is null"}
+{"question_id":"q-ee078af201","document_id":"postgres-15/sql-createschema","char_start":3629,"char_end":4476,"relevant":false,"quote":""}
+{"question_id":"q-ee078af201","document_id":"postgres-16/history","char_start":0,"char_end":315,"relevant":false,"quote":""}
+{"question_id":"q-ee078af201","document_id":"postgres-16/infoschema-collation-character-set-applicab","char_start":0,"char_end":999,"relevant":true,"quote":"Character sets are currently not implemented as schema objects, so this column is null"}
+{"question_id":"q-ee078af201","document_id":"postgres-16/sql-createschema","char_start":3601,"char_end":4448,"relevant":false,"quote":""}
+{"question_id":"q-f35971435d","document_id":"docker/desktop/enterprise/unassociated-machines","char_start":3992,"char_end":5087,"relevant":false,"quote":""}
+{"question_id":"q-f35971435d","document_id":"docker/security/provisioning/auto-provisioning","char_start":1451,"char_end":1903,"relevant":false,"quote":""}
+{"question_id":"q-f35971435d","document_id":"docker/security/provisioning/domain-management","char_start":4197,"char_end":5301,"relevant":false,"quote":""}
+{"question_id":"q-f35971435d","document_id":"docker/security/provisioning/domain-management","char_start":672,"char_end":1093,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/","char_start":0,"char_end":107,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/ai/gordon/use-cases","char_start":3325,"char_end":4395,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/desktop/use-desktop/kubernetes","char_start":6853,"char_end":7749,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/docker-hub/repos/manage/builds/setup","char_start":2981,"char_end":4529,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/engine/swarm/swarm-tutorial","char_start":562,"char_end":796,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/desktop/enterprise/enforce-sign-in/methods","char_start":8616,"char_end":9293,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/desktop/features/wsl/best-practices","char_start":944,"char_end":1950,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/engine/install","char_start":3687,"char_end":3802,"relevant":false,"quote":""}
+{"question_id":"q-f3cbf9d4de","document_id":"docker/engine/security/rootless/tips","char_start":0,"char_end":1520,"relevant":false,"quote":""}
+{"question_id":"q-f4a73d50f9","document_id":"docker/scout/policy/local","char_start":14154,"char_end":14987,"relevant":true,"quote":"The `debug` field in the policy-config controls `print()` output from your\n> Rego."}
+{"question_id":"q-f4a73d50f9","document_id":"docker/build/policies/built-ins","char_start":0,"char_end":1038,"relevant":false,"quote":""}
+{"question_id":"q-f4a73d50f9","document_id":"docker/build/policies/debugging","char_start":1548,"char_end":2949,"relevant":true,"quote":"add `--policy log-level=debug` to see the full input\nJSON, unresolved fields, and policy responses"}
+{"question_id":"q-f4a73d50f9","document_id":"docker/build/policies/examples","char_start":464,"char_end":750,"relevant":false,"quote":""}
+{"question_id":"q-f4a73d50f9","document_id":"docker/build/policies/usage","char_start":504,"char_end":1105,"relevant":false,"quote":""}
+{"question_id":"q-f4a73d50f9","document_id":"docker/engine/daemon/logs","char_start":1456,"char_end":2898,"relevant":false,"quote":""}
+{"question_id":"q-f69c74ea69","document_id":"kubernetes/reference/labels-annotations-taints","char_start":77434,"char_end":77897,"relevant":false,"quote":""}
+{"question_id":"q-f69c74ea69","document_id":"kubernetes/tasks/access-application-cluster/create-external-load-balancer","char_start":5428,"char_end":6616,"relevant":false,"quote":""}
+{"question_id":"q-f69c74ea69","document_id":"kubernetes/tasks/debug/debug-cluster/troubleshoot-kubectl","char_start":3589,"char_end":4240,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-15/infoschema-usage-privileges","char_start":0,"char_end":1502,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-15/predefined-roles","char_start":0,"char_end":649,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-16/database-roles","char_start":1640,"char_end":2802,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-16/predefined-roles","char_start":1940,"char_end":4185,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-16/runtime-config-connection","char_start":2684,"char_end":3450,"relevant":false,"quote":""}
+{"question_id":"q-f811091252","document_id":"postgres-16/sql-createrole","char_start":2541,"char_end":3735,"relevant":false,"quote":""}
+{"question_id":"q-f825a1ab3e","document_id":"kubernetes/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDiskComplete","char_start":0,"char_end":544,"relevant":true,"quote":"Requires CSIMigration and CSIMigrationAzureDisk feature\nflags enabled"}
+{"question_id":"q-f825a1ab3e","document_id":"kubernetes/reference/labels-annotations-taints","char_start":39933,"char_end":40423,"relevant":false,"quote":""}
+{"question_id":"q-f825a1ab3e","document_id":"kubernetes/concepts/storage/volumes","char_start":36437,"char_end":37431,"relevant":false,"quote":""}
+{"question_id":"q-f9a943c2a7","document_id":"kubernetes/reference/labels-annotations-taints","char_start":38117,"char_end":38943,"relevant":false,"quote":""}
+{"question_id":"q-f9a943c2a7","document_id":"kubernetes/reference/labels-annotations-taints","char_start":39933,"char_end":40423,"relevant":false,"quote":""}
+{"question_id":"q-fd810d2294","document_id":"postgres-15/sql-createrole","char_start":10366,"char_end":11149,"relevant":false,"quote":""}
+{"question_id":"q-fd810d2294","document_id":"postgres-16/sql-createrole","char_start":7103,"char_end":8116,"relevant":true,"quote":"The `ADMIN` clause has the same effect as `ROLE`, but the named roles are added as members of the new role with `ADMIN` enabled, giving them the right to grant membership in the new role to others."}
+{"question_id":"q-fd810d2294","document_id":"postgres-15/app-createuser","char_start":971,"char_end":1994,"relevant":false,"quote":""}
+{"question_id":"q-fd810d2294","document_id":"postgres-16/sql-createrole","char_start":638,"char_end":1637,"relevant":false,"quote":""}
+{"question_id":"q-fd810d2294","document_id":"postgres-16/sql-createrole","char_start":10681,"char_end":11521,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-15/rules-materializedviews","char_start":0,"char_end":1148,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-15/rules-views","char_start":0,"char_end":717,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-15/view-pg-views","char_start":0,"char_end":475,"relevant":true,"quote":"definition text View definition (a reconstructed SELECT query)"}
+{"question_id":"q-ff32a0b736","document_id":"postgres-16/rules-materializedviews","char_start":0,"char_end":1148,"relevant":false,"quote":""}
+{"question_id":"q-ff32a0b736","document_id":"postgres-16/view-pg-views","char_start":0,"char_end":475,"relevant":true,"quote":"definition text View definition (a reconstructed SELECT query)"}
+{"question_id":"q-0058ad6d37","document_id":"docker/desktop/previous-versions/2.x-mac","char_start":17946,"char_end":18550,"relevant":false,"quote":""}
+{"question_id":"q-0058ad6d37","document_id":"docker/desktop/use-desktop/kubernetes","char_start":455,"char_end":1013,"relevant":false,"quote":""}
+{"question_id":"q-06a7101536","document_id":"postgres-15/rules-update","char_start":3336,"char_end":4213,"relevant":false,"quote":""}
+{"question_id":"q-06a7101536","document_id":"postgres-16/rules-update","char_start":3337,"char_end":4214,"relevant":false,"quote":""}
+{"question_id":"q-1ad2cff930","document_id":"postgres-15/runtime-config-connection","char_start":898,"char_end":1937,"relevant":false,"quote":""}
+{"question_id":"q-1ad2cff930","document_id":"postgres-16/runtime-config-connection","char_start":898,"char_end":1927,"relevant":false,"quote":""}
+{"question_id":"q-3b4a27e3cb","document_id":"docker/engine/network/links","char_start":11356,"char_end":12392,"relevant":false,"quote":""}
+{"question_id":"q-3b4a27e3cb","document_id":"docker/build/building/cdi","char_start":6367,"char_end":6637,"relevant":false,"quote":""}
+{"question_id":"q-6bd0a33337","document_id":"docker/desktop/enterprise/enterprise-deployment/dev-box","char_start":0,"char_end":1014,"relevant":false,"quote":""}
+{"question_id":"q-6bd0a33337","document_id":"docker/desktop/enterprise/enterprise-deployment/dev-box","char_start":1692,"char_end":2066,"relevant":false,"quote":""}
+{"question_id":"q-92f87557d9","document_id":"kubernetes/reference/labels-annotations-taints","char_start":9558,"char_end":10103,"relevant":false,"quote":""}
+{"question_id":"q-92f87557d9","document_id":"kubernetes/reference/labels-annotations-taints","char_start":34794,"char_end":35604,"relevant":false,"quote":""}
+{"question_id":"q-99eb6d8433","document_id":"docker/build/building/multi-platform","char_start":7499,"char_end":8320,"relevant":false,"quote":""}
+{"question_id":"q-99eb6d8433","document_id":"docker/build/building/variables","char_start":820,"char_end":1593,"relevant":false,"quote":""}
+{"question_id":"q-9d16a2fd06","document_id":"docker/scout/explore/image-details-view","char_start":3293,"char_end":3829,"relevant":false,"quote":""}
+{"question_id":"q-9d16a2fd06","document_id":"docker/docker-hub/repos/manage/builds","char_start":720,"char_end":1672,"relevant":false,"quote":""}
+{"question_id":"q-9fbeeaa60c","document_id":"kubernetes/concepts/workloads/autoscaling/vertical-pod-autoscale","char_start":1394,"char_end":1773,"relevant":false,"quote":""}
+{"question_id":"q-9fbeeaa60c","document_id":"kubernetes/concepts/services-networking/gateway","char_start":9640,"char_end":10232,"relevant":false,"quote":""}
+{"question_id":"q-b75b92548e","document_id":"docker/ai/sandboxes/governance/audit/siem","char_start":693,"char_end":1338,"relevant":false,"quote":""}
+{"question_id":"q-b75b92548e","document_id":"docker/ai/sandboxes/governance/concepts","char_start":182,"char_end":1203,"relevant":false,"quote":""}
+{"question_id":"q-c71acd9d35","document_id":"docker/security/provisioning/scim/group-mapping","char_start":0,"char_end":551,"relevant":false,"quote":""}
+{"question_id":"q-c71acd9d35","document_id":"docker/engine/swarm/how-swarm-mode-works/nodes","char_start":326,"char_end":1549,"relevant":false,"quote":""}
+{"question_id":"q-c975c7cbb4","document_id":"postgres-15/runtime-config-wal","char_start":16026,"char_end":16760,"relevant":false,"quote":""}
+{"question_id":"q-c975c7cbb4","document_id":"postgres-16/runtime-config-wal","char_start":15971,"char_end":16705,"relevant":false,"quote":""}
+{"question_id":"q-d758e73c34","document_id":"docker/desktop/enterprise/hardened-desktop/settings-management/settings-reference","char_start":3047,"char_end":3331,"relevant":false,"quote":""}
+{"question_id":"q-d758e73c34","document_id":"docker/engine/logging/drivers/json-file","char_start":1883,"char_end":2682,"relevant":false,"quote":""}
+{"question_id":"q-f734617f00","document_id":"postgres-15/datatype-character","char_start":2576,"char_end":3831,"relevant":false,"quote":""}
+{"question_id":"q-f734617f00","document_id":"postgres-15/datatype-character","char_start":5160,"char_end":6032,"relevant":false,"quote":""}
+{"question_id":"q-fcf716cd24","document_id":"docker/dhi/explore/scanner-integrations","char_start":7725,"char_end":8206,"relevant":false,"quote":""}
+{"question_id":"q-fcf716cd24","document_id":"docker/dhi/explore/security-concepts/cves","char_start":5568,"char_end":6363,"relevant":false,"quote":""}

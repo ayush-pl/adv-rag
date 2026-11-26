@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from ragbench.dataset.models import read_questions
+from ragbench.dataset.models import Question, read_questions
 from ragbench.evaluation.generation_report import (
     audit_candidates,
     compare_runs,
@@ -19,15 +19,19 @@ from ragbench.evaluation.generation_report import (
     join,
     summarize_run,
 )
-from ragbench.evaluation.judge import JUDGE_PROMPT_VERSION, AnswerEvaluation
+from ragbench.evaluation.judge import JUDGE_PROMPT_VERSION, AnswerEvaluation, citation_scores
 from ragbench.generation.prompts import PROMPT_VERSION
 from ragbench.generation.rag_pipeline import GeneratedAnswer
 
 DATA_DIR = Path("data")
 
 
-def load(split: str, stem: str, judge_name: str, current: set[str]):
-    """Answers and evaluations, for questions still in the dataset. Withdrawn ones are left out."""
+def load(split: str, stem: str, judge_name: str, current: dict[str, Question]):
+    """Answers and evaluations, for questions still in the dataset. Withdrawn ones are left out.
+
+    Citation scores are recomputed from the current gold labels, because labels can gain
+    evidence after judging. They need no judge, so nothing is judged again.
+    """
     generation = DATA_DIR / "runs" / "generation" / split / f"{stem}.jsonl"
     judgements = (
         DATA_DIR
@@ -41,6 +45,13 @@ def load(split: str, stem: str, judge_name: str, current: set[str]):
     with judgements.open(encoding="utf-8") as lines:
         evaluations = [AnswerEvaluation.model_validate(json.loads(line)) for line in lines]
     answers = [answer for answer in answers if answer.question_id in current]
+    by_id = {answer.question_id: answer for answer in answers}
+    for evaluation in evaluations:
+        if evaluation.question_id in by_id:
+            precision, recall = citation_scores(
+                current[evaluation.question_id], by_id[evaluation.question_id]
+            )
+            evaluation.citation_precision, evaluation.citation_recall = precision, recall
     return join(answers, evaluations)
 
 
@@ -64,7 +75,7 @@ def main() -> None:
     judge_name = spec["judge"].replace(":", "-")
     runs_dir = DATA_DIR / "runs" / "generation" / args.split
     dataset = DATA_DIR / "datasets" / "v1" / f"{args.split}.jsonl"
-    current = {question.question_id for question in read_questions(dataset)}
+    current = {question.question_id: question for question in read_questions(dataset)}
     model_names = {m: m.replace(":", "-").replace("/", "-") for m in spec["models"]}
     retrieval_names = {
         name: next(runs_dir.glob(f"{name}-*__*__retrieved__{PROMPT_VERSION}.jsonl")).name.split(

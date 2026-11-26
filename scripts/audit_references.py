@@ -1,13 +1,14 @@
 """Audit reference answers that look wrong.
 
-  export  write the questions to check into data/datasets/v1/review_sheet_references.xlsx
+  export  write the questions to check into data/datasets/v1/review_sheet_references*.xlsx
   import  apply your decisions to the review history, and clear judgements of fixed questions
 
 A question is checked when a human scorer wrote "reference wrong" about it, or when every
 oracle run, which had the gold passages, scored 2 or lower on it. After importing, rebuild the
 dataset with scripts/finalize_dataset.py, then re-judge with scripts/judge_answers.py.
 
-The test split is audited separately, after its missed-evidence review.
+The test split is audited on its own sheet with --split test, after its missed-evidence review,
+so that development decisions are not made while looking at test answers.
 """
 
 import argparse
@@ -31,8 +32,11 @@ from ragbench.generation.rag_pipeline import GeneratedAnswer
 DATA_DIR = Path("data")
 DATASET_DIR = DATA_DIR / "datasets" / "v1"
 CALIBRATION_DIR = DATASET_DIR / "calibration"
-SHEET = DATASET_DIR / "review_sheet_references.xlsx"
-SPLITS = ["development", "calibration"]
+# Each audit: the splits it covers, and its sheet.
+AUDITS = {
+    "development": (["development", "calibration"], DATASET_DIR / "review_sheet_references.xlsx"),
+    "test": (["test"], DATASET_DIR / "review_sheet_references_test.xlsx"),
+}
 SCORED_SETS = [
     ("items.jsonl", "human_scores.jsonl"),
     ("validation_items.jsonl", "validation_human_scores.jsonl"),
@@ -72,10 +76,10 @@ def flagged_by_scorers() -> dict[str, str]:
     return flagged
 
 
-def export() -> None:
+def export(splits: list[str], sheet: Path) -> None:
     questions: dict[str, Question] = {}
     split_of: dict[str, str] = {}
-    for split in SPLITS:
+    for split in splits:
         for question in read_questions(DATASET_DIR / f"{split}.jsonl"):
             questions[question.question_id] = question
             split_of[question.question_id] = split
@@ -84,7 +88,7 @@ def export() -> None:
     for question_id, note in flagged_by_scorers().items():
         if question_id in questions:
             reasons.setdefault(question_id, []).append(f"Flagged while scoring: {note}")
-    runs_by_split = {split: oracle_runs(split) for split in SPLITS}
+    runs_by_split = {split: oracle_runs(split) for split in splits}
     for runs in runs_by_split.values():
         for question_id in audit_candidates(list(runs.values())):
             reasons.setdefault(question_id, []).append(
@@ -107,10 +111,10 @@ def export() -> None:
         ]
         cases.append(AuditCase(questions[question_id], "\n".join(reasons[question_id]), answers))
     try:
-        export_audit_sheet(cases, SHEET)
+        export_audit_sheet(cases, sheet)
     except PermissionError as exc:
-        raise SystemExit(f"Cannot write {SHEET}. Close it in Excel first.") from exc
-    print(f"Wrote {len(cases)} questions to check into {SHEET}")
+        raise SystemExit(f"Cannot write {sheet}. Close it in Excel first.") from exc
+    print(f"Wrote {len(cases)} questions to check into {sheet}")
 
 
 def drop_judgements(question_ids: set[str]) -> int:
@@ -127,11 +131,11 @@ def drop_judgements(question_ids: set[str]) -> int:
     return removed
 
 
-def import_sheet() -> None:
+def import_sheet(splits: list[str], sheet: Path) -> None:
     questions = {
-        q.question_id: q for split in SPLITS for q in read_questions(DATASET_DIR / f"{split}.jsonl")
+        q.question_id: q for split in splits for q in read_questions(DATASET_DIR / f"{split}.jsonl")
     }
-    result = read_audit_sheet(SHEET, set(questions))
+    result = read_audit_sheet(sheet, set(questions))
     if result.problems:
         print("Nothing saved. Fix these rows and import again:")
         print("\n".join(f"  {problem}" for problem in result.problems))
@@ -155,9 +159,16 @@ def main() -> None:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument("action", choices=["export", "import"])
+    parser.add_argument(
+        "--split",
+        default="development",
+        choices=sorted(AUDITS),
+        help="development covers the development and calibration splits",
+    )
     args = parser.parse_args()
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    export() if args.action == "export" else import_sheet()
+    splits, sheet = AUDITS[args.split]
+    export(splits, sheet) if args.action == "export" else import_sheet(splits, sheet)
 
 
 if __name__ == "__main__":

@@ -8,6 +8,7 @@ import  add passages marked y as evidence, withdraw unanswerable questions that 
 """
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -29,6 +30,8 @@ DATA_DIR = Path("data")
 DATASET_DIR = DATA_DIR / "datasets" / "v1"
 DECISIONS_PATH = DATASET_DIR / "review_decisions.jsonl"
 JUDGMENTS_PATH = DATASET_DIR / "pool_judgments.jsonl"
+# How each split was pooled, for reports to state.
+POOLING_PATH = DATASET_DIR / "pooling.json"
 
 # One configuration per family, so the pool covers what different methods find.
 POOL_CONFIGS = [
@@ -42,6 +45,8 @@ POOL_CONFIGS = [
 ]
 # The best development configuration, used to search for answers to unanswerable questions.
 UNANSWERABLE_CONFIG = "r256-hybrid-bge-k60-rerank"
+# Development was pooled at depth 3. Test was pooled at depth 2, which on development would have
+# found 36 of the 39 relevant passages from two-thirds of the rows.
 DEPTH = 3
 
 
@@ -52,6 +57,7 @@ def main() -> None:
     parser.add_argument("action", choices=["export", "import"])
     parser.add_argument("--split", default="development")
     parser.add_argument("--sheet", type=Path)
+    parser.add_argument("--depth", type=int, default=DEPTH, help="results pooled per config")
     args = parser.parse_args()
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sheet = args.sheet or DATASET_DIR / f"review_sheet_missed_evidence_{args.split}.xlsx"
@@ -90,20 +96,28 @@ def main() -> None:
     answerable = [q for q in questions if q.answerable]
     unanswerable = [q for q in questions if not q.answerable]
     if unanswerable:
-        rankings[UNANSWERABLE_CONFIG].update(_retrieve_unanswerable(unanswerable))
+        rankings[UNANSWERABLE_CONFIG].update(_retrieve_unanswerable(unanswerable, args.depth))
 
-    candidates = build_pool(answerable, rankings, DEPTH, judgments)
+    candidates = build_pool(answerable, rankings, args.depth, judgments)
     candidates += build_pool(
-        unanswerable, {UNANSWERABLE_CONFIG: rankings[UNANSWERABLE_CONFIG]}, DEPTH, judgments
+        unanswerable, {UNANSWERABLE_CONFIG: rankings[UNANSWERABLE_CONFIG]}, args.depth, judgments
     )
     try:
         export_pool(candidates, documents, sheet)
     except PermissionError as exc:
         raise SystemExit(f"Cannot write {sheet}. Close it in Excel first.") from exc
+    pooling = json.loads(POOLING_PATH.read_text(encoding="utf-8")) if POOLING_PATH.exists() else {}
+    pooling[args.split] = {
+        "depth": args.depth,
+        "configs": POOL_CONFIGS,
+        "unanswerable_config": UNANSWERABLE_CONFIG,
+        "passages": len(candidates),
+    }
+    POOLING_PATH.write_text(json.dumps(pooling, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Wrote {len(candidates)} passages for {len(questions)} questions into {sheet}")
 
 
-def _retrieve_unanswerable(questions) -> dict[str, list[str]]:
+def _retrieve_unanswerable(questions, depth: int) -> dict[str, list[str]]:
     from ragbench.experiments.resources import Resources
     from ragbench.experiments.sweep import SweepSpec, expand_sweep
 
@@ -112,7 +126,7 @@ def _retrieve_unanswerable(questions) -> dict[str, list[str]]:
     config = next(c for c in expand_sweep(spec) if c.name == UNANSWERABLE_CONFIG)
     retriever = Resources(DATA_DIR).retriever(config)
     return {
-        q.question_id: [r.chunk.chunk_id for r in retriever.retrieve(q.question, DEPTH)]
+        q.question_id: [r.chunk.chunk_id for r in retriever.retrieve(q.question, depth)]
         for q in questions
     }
 
